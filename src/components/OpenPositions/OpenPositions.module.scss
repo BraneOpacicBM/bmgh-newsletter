@@ -1,0 +1,23 @@
+.wrapper {
+  background-color: #f3f3f3;
+  padding: 4rem 2rem;
+  color: black;
+
+  .jobs_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+
+    .job {
+      padding: 1rem 2rem;
+      background-color: #0362fd21;
+      width: fit-content;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+  }
+}

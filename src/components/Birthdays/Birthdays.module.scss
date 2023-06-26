@@ -1,0 +1,39 @@
+.wrapper {
+  background-color: #f3f3f3;
+  padding: 4rem 2rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .employees_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    max-width: 500px;
+
+    .employee {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      flex-basis: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      img {
+        width: 64px;
+        height: 64px;
+      }
+      div {
+        background-color: #0362fd21;
+        padding: 0.3rem;
+        width: min-content;
+      }
+    }
+  }
+}
