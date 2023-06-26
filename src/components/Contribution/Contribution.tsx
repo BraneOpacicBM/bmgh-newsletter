@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styles from './Contribution.module.scss'
-import { COMPANIES, CONTRIBUTION_PLATFORMS } from './constants'
+import { COMPANIES, CONTRIBUTION_PLATFORMS_MAPPER } from './constants'
 import { Platform } from './types'
 
 const Contributions: FC = () => {
@@ -9,7 +9,7 @@ const Contributions: FC = () => {
       <h2>Contribute to Our Online Story ✍️</h2>
       <div className={styles.platforms_list}>
         {COMPANIES.map((company, index) => {
-          const companyPlatforms = CONTRIBUTION_PLATFORMS[company];
+          const companyPlatforms = CONTRIBUTION_PLATFORMS_MAPPER[company];
           const platforms = Object.keys(companyPlatforms);
 
           return (
@@ -19,7 +19,12 @@ const Contributions: FC = () => {
               </p>
               {
                 platforms.map((platform, i) => (
-                  <a target='_blank' href={companyPlatforms[platform as Platform]} className={i % 2 === 0 ? styles.chip_blue : styles.chip_white} rel="noreferrer">
+                  <a
+                    target='_blank'
+                    href={companyPlatforms[platform as Platform]}
+                    className={i % 2 === 0 ? styles.chip_blue : styles.chip_white}
+                    rel="noreferrer"
+                  >
                     {platform}
                   </a>
                 ))

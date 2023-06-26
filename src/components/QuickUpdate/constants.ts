@@ -2,7 +2,7 @@ import { Company } from "../../common/enums";
 import { SocialMedia } from "./types";
 
 
-export const SOCIAL_MEDIA_LINKS: Record<Company, SocialMedia> = {
+export const SOCIAL_MEDIA_LINKS_MAPPER: Record<Company, SocialMedia> = {
   [Company.UN1QUELY]: {
     facebook: "https://www.facebook.com/un1quely.team/",
     instagram: "https://www.instagram.com/un1quely.team/",

@@ -9,7 +9,7 @@ export const COMPANIES = [
   Company.BRIGHT_MARBLES
 ]
 
-export const CONTRIBUTION_PLATFORMS: Record<Company, ContributionPlatforms> = {
+export const CONTRIBUTION_PLATFORMS_MAPPER: Record<Company, ContributionPlatforms> = {
   [Company.UN1QUELY]: {
     Joberty: "https://www.joberty.rs/it-kompanija/1954/un1quely/o-kompaniji",
     Google:

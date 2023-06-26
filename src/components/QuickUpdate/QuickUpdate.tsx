@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
 import styles from './QuickUpdate.module.scss'
 import { Company } from '../../common/enums';
-import { SOCIAL_MEDIA_LINKS } from './constants';
+import { SOCIAL_MEDIA_LINKS_MAPPER } from './constants';
 import { FacebookIcon, InstagramIcon, LinkedinIcon, TwitterIcon, YoutubeIcon } from '../icons';
 
 type QuickUpdateProps = {
@@ -17,7 +17,7 @@ const QuickUpdate: FC<QuickUpdateProps> = ({
   description,
   bgColor = 'blue',
 }) => {
-  const socialMediaLink = SOCIAL_MEDIA_LINKS[company]
+  const socialMediaLink = SOCIAL_MEDIA_LINKS_MAPPER[company]
 
   return (
     <div className={styles[`wrapper_${bgColor}`]}>
