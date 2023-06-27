@@ -16,6 +16,7 @@ export const Newsletter = () => {
     <div className={styles.newsletter_body}>
       <Header />
       <ProjectClientSection />
+      {/* Comment or Uncomment if you want to SHOW/HIDE section */}
       <QuickUpdate
         company={Company.BRIGHT_MARBLES}
         title='Lorem ipsum dolor sit amet consectetur adipisicing'
@@ -30,6 +31,28 @@ export const Newsletter = () => {
       <QuickUpdate
         bgColor="black"
         company={Company.BRIGHTLY}
+        title='Lorem ipsum dolor sit amet consectetur adipisicing'
+        description={(
+          <div>
+            <p>Description can be in form of text(string) or you can pass html as this example show 💙</p>
+          </div>
+        )}
+      />
+      <QuickUpdate
+        bgColor="blue"
+        company={Company.BRIGHT_MARBLES}
+        title='Lorem ipsum dolor sit amet consectetur adipisicing'
+        description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam.'
+      />
+      <QuickUpdate
+        bgColor="white"
+        company={Company.BRIGHT_MARBLES_MACEDONIA}
+        title='Lorem ipsum dolor sit amet consectetur adipisicing'
+        description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam.'
+      />
+      <QuickUpdate
+        bgColor="black"
+        company={Company.BRIGHT_MARBLES_NETHERLANDS}
         title='Lorem ipsum dolor sit amet consectetur adipisicing'
         description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam.'
       />

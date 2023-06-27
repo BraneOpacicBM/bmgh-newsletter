@@ -13,7 +13,7 @@ const Contributions: FC = () => {
           const platforms = Object.keys(companyPlatforms);
 
           return (
-            <div className={styles.platform}>
+            <div className={styles.platform} key={company}>
               <p>
                 {company}
               </p>

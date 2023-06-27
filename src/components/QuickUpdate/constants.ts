@@ -11,27 +11,27 @@ export const SOCIAL_MEDIA_LINKS_MAPPER: Record<Company, SocialMedia> = {
     twitter: "https://twitter.com/un1quely",
   },
   [Company.BRIGHTLY]: {
-    facebook: "",
-    instagram: "",
+    facebook: "https://www.facebook.com/BrightlyBMGH",
+    instagram: "https://www.instagram.com/brightly.bmgh/",
     youtube: "",
-    linkedin: "",
-    twitter: ""
+    linkedin: "https://www.linkedin.com/company/brightly-bmgh/",
+    twitter: "https://twitter.com/Brightly_BMGH"
   },
   [Company.BRIGHT_MARBLES]: {
-    facebook: "",
-    instagram: "",
+    facebook: "https://www.facebook.com/brightmarbles",
+    instagram: "https://www.instagram.com/brightmarbles/",
+    youtube: "https://www.youtube.com/BrightMarbles",
+    linkedin: "https://www.linkedin.com/company/brightmarbles/",
+    twitter: "https://twitter.com/BrightMarbles"
+  },
+  [Company.BRIGHT_MARBLES_MACEDONIA]: {
+    facebook: "https://www.facebook.com/brightmarbles.mk",
+    instagram: "https://www.instagram.com/brightmarbles.mk/",
     youtube: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/company/brightmarbles-macedonia/",
     twitter: ""
   },
   [Company.BRIGHT_MARBLES_NETHERLANDS]: {
-    facebook: "",
-    instagram: "",
-    youtube: "",
-    linkedin: "",
-    twitter: ""
-  },
-  [Company.BRIGHT_MARBLES_MACEDONIA]: {
     facebook: "",
     instagram: "",
     youtube: "",

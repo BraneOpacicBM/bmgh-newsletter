@@ -13,7 +13,7 @@ const OpenPositions: FC<OpenPositionsProps> = ({ jobPostings }) => {
 
       <div className={styles.jobs_list}>
         {jobPostings?.map((job) => (
-          <a rel="noreferrer" href={job.postingUrl} target='_blank' className={styles.job}>
+          <a key={job.title} rel="noreferrer" href={job.postingUrl} target='_blank' className={styles.job}>
             <p>{job.title}</p>
           </a>
         ))}

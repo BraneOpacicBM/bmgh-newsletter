@@ -15,7 +15,7 @@ const Colleagues: FC<ColleaguesProps> = ({
       <div className={styles.colleagues_list}>
         {
           colleagues?.map((colleague) => (
-            <div>
+            <div key={colleague.fullName}>
               <img src={colleague.imgUrl || 'https://brightmarbles.io/wp-content/uploads/2021/02/join-us.gif'} alt='profile' />
               <div>
                 <p className={styles.title}>{colleague.fullName}</p>

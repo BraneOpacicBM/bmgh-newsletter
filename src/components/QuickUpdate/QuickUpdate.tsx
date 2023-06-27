@@ -32,11 +32,11 @@ const QuickUpdate: FC<QuickUpdateProps> = ({
       </div>
       <div className={styles.social_media}>
         <div>
-          <a rel="noreferrer" target='_blank' href={socialMediaLink.youtube}><YoutubeIcon /></a>
-          <a rel="noreferrer" target='_blank' href={socialMediaLink.twitter}><TwitterIcon /></a>
-          <a rel="noreferrer" target='_blank' href={socialMediaLink.linkedin}><LinkedinIcon /></a>
-          <a rel="noreferrer" target='_blank' href={socialMediaLink.instagram}><InstagramIcon /></a>
-          <a rel="noreferrer" target='_blank' href={socialMediaLink.facebook}><FacebookIcon /></a>
+          {socialMediaLink.youtube && <a rel="noreferrer" target='_blank' href={socialMediaLink.youtube}><YoutubeIcon /></a>}
+          {socialMediaLink.twitter && <a rel="noreferrer" target='_blank' href={socialMediaLink.twitter}><TwitterIcon /></a>}
+          {socialMediaLink.linkedin && <a rel="noreferrer" target='_blank' href={socialMediaLink.linkedin}><LinkedinIcon /></a>}
+          {socialMediaLink.instagram && <a rel="noreferrer" target='_blank' href={socialMediaLink.instagram}><InstagramIcon /></a>}
+          {socialMediaLink.facebook && <a rel="noreferrer" target='_blank' href={socialMediaLink.facebook}><FacebookIcon /></a>}
         </div>
         <div>
           <p>Feel free to support out efforts on Social Media</p>
