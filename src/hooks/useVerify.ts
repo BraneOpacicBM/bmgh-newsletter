@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
@@ -28,7 +28,7 @@ const useVerify = () => {
   }, [navigate, token]);
 
   return {
-    verifyMessage: data,
+    isVerified: data === "Success!",
     loading,
     error,
   };

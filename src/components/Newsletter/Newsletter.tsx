@@ -13,9 +13,9 @@ import Contributions from "../Contribution/Contribution";
 import useVerify from "../../hooks/useVerify";
 
 export const Newsletter = () => {
-  const { loading, verifyMessage } = useVerify()
+  const { loading, isVerified } = useVerify()
 
-  if (loading || verifyMessage !== 'Success!') return null
+  if (loading || !isVerified) return null
 
   return (
     <div className={styles.newsletter_body}>
