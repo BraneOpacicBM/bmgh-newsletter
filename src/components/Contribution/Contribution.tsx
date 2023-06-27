@@ -8,7 +8,7 @@ const Contributions: FC = () => {
     <div className={styles.wrapper}>
       <h2>Contribute to Our Online Story ✍️</h2>
       <div className={styles.platforms_list}>
-        {COMPANIES.map((company, index) => {
+        {COMPANIES.map((company) => {
           const companyPlatforms = CONTRIBUTION_PLATFORMS_MAPPER[company];
           const platforms = Object.keys(companyPlatforms);
 
