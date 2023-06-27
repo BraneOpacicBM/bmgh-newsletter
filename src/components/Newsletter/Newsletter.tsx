@@ -37,11 +37,11 @@ export const Newsletter = () => {
       <OpenPositions jobPostings={[
         {
           title: 'Penetration Tester Junior-Senior (UN1QUELY)',
-          postingUrl: 'lhttps://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002466166/Penetration-Tester?source=CareerSite'
+          postingUrl: 'https://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002466166/Penetration-Tester?source=CareerSite'
         },
         {
           title: 'Front end developer Senior (UN1QUELY)',
-          postingUrl: 'lhttps://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002466166/Penetration-Tester?source=CareerSite'
+          postingUrl: 'https://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002466166/Penetration-Tester?source=CareerSite'
         },
       ]} />
       <ThreeColorDivider />
