@@ -86,7 +86,7 @@ export const Newsletter = () => {
         imgUrl: 'https://brightmarbles.io/wp-content/uploads/2021/06/DSC01206-copy.png'
       }]} />
       <Contributions />
-      <ThreeColorDivider hideWhite/>
+      <ThreeColorDivider hideWhite />
     </div>
   );
 };
