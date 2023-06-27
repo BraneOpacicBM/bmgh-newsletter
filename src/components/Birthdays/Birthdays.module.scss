@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+
   .employees_list {
     display: flex;
     flex-wrap: wrap;
@@ -31,8 +31,10 @@
       }
       div {
         background-color: #0362fd21;
-        padding: 0.3rem;
+        padding: 5px 10px;
         width: min-content;
+        border-radius: 4px;
+        font-size: 13px;
       }
     }
   }
