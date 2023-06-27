@@ -1,0 +1,30 @@
+.wrapper_three{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & > div {
+    height: 1.2rem;
+    background-color: #0362fd;
+    &:first-child {
+      background-color: black;
+    }
+    &:last-child {
+      background-color: #f3f3f3;
+    }
+  }
+
+}
+
+.wrapper_one{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & > div {
+    &:first-child {
+      background-color: #0362fd;
+      height: 1.2rem;
+    }
+  }
+
+}
+
