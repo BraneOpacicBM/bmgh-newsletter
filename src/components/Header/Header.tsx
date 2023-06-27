@@ -1,6 +1,18 @@
+import { FC } from "react";
 import styles from "./Header.module.scss";
+import { Paragraph } from "../../common/types";
 
-const Header = () => (
+type HeaderProps = {
+  title: string;
+  leftParagraphs: Paragraph[]
+  rightParagraphs: Paragraph[]
+};
+
+const Header: FC<HeaderProps> = ({
+  title,
+  leftParagraphs = [],
+  rightParagraphs = [],
+}) => (
   <div className={styles.header}>
     <div>
       <h2>BMGH</h2>
@@ -8,28 +20,23 @@ const Header = () => (
     </div>
     <div className={styles.header_text}>
       <div>
-        <h1>May Finance &amp; Project Update</h1>
+        <h1>{title}</h1>
         <div className={styles.header_paragraph}>
-          <p>
-            <span>Bench Strength: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
+          {leftParagraphs?.map((paragraph) => (
+            <p>
+              {paragraph.title && <span>{paragraph.title}</span>}
+              {paragraph.description}
+            </p>
+          ))}
         </div>
       </div>
       <div className={styles.header_paragraph}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.</p>
-        <p>
-          <span>Profit: </span>
-          Acumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-        </p>
+        {rightParagraphs?.map((paragraph) => (
+          <p>
+            {paragraph.title && <span>{paragraph.title}</span>}
+            {paragraph.description}
+          </p>
+        ))}
       </div>
     </div>
   </div>

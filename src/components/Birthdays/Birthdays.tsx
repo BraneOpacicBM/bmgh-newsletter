@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import styles from './Birthdays.module.scss'
 import { Employee } from './types'
+import { DEFAULT_PROFILE_IMG } from '../../common/constants'
 
 type BirthdaysProps = {
   employees: Array<Employee>
@@ -15,7 +16,7 @@ const Birthdays: FC<BirthdaysProps> = ({ employees }) => {
       <div className={styles.employees_list}>
         {employees?.map((employee) => (
           <div className={styles.employee} key={employee.name}>
-            <img src={employee.imgUrl ?? 'https://brightmarbles.io/wp-content/uploads/2021/02/join-us.gif'} alt='profile' />
+            <img src={employee.imgUrl ?? DEFAULT_PROFILE_IMG} alt='profile' />
             <div>
               <p>{employee.name}</p>
             </div>
