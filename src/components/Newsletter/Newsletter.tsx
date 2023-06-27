@@ -19,9 +19,84 @@ export const Newsletter = () => {
 
   return (
     <div className={styles.newsletter_body}>
-      <Header />
-      <ProjectClientSection />
-      {/* Comment or Uncomment if you want to SHOW/HIDE section */}
+      <Header
+        title='May Finance &amp; Project Update'
+        leftParagraphs={[
+          {
+            title: 'Bench Strength:',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          }, {
+            title: 'Cash Flows:',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          }
+        ]}
+        rightParagraphs={[
+          {
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Cash Flows:',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'New Projects:',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit '
+          }
+        ]}
+      />
+      <ProjectClientSection
+        leftParagraphs={[
+          {
+            title: 'Bench Strength',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Cash Flows',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Bench Strength',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Cash Flows',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Bench Strength',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Cash Flows',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          }
+        ]}
+        rightParagraphs={[
+          {
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Cash Flows',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'New Projects',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit '
+          },
+          {
+            title: 'Bench Strength',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Cash Flows',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+          {
+            title: 'Bench Strength',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.  '
+          },
+        ]}
+      />
       <QuickUpdate
         company={Company.BRIGHT_MARBLES}
         title='Lorem ipsum dolor sit amet consectetur adipisicing'
@@ -61,7 +136,51 @@ export const Newsletter = () => {
         title='Lorem ipsum dolor sit amet consectetur adipisicing'
         description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam.'
       />
-      <NewsAndEvents />
+      <NewsAndEvents
+        data={[
+          {
+            img: 'https://brightmarbles.io/wp-content/uploads/2023/06/MicrosoftTeams-image-38-1.png',
+            title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+            description: (
+              <>
+                Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam.
+                <a target='_blank' href='www.wikipedia.com'>Click here to read more</a>
+              </>
+            )
+          },
+          {
+            img: 'https://brightmarbles.io/wp-content/uploads/2023/06/MicrosoftTeams-image-38-1.png',
+            title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+            description: (
+              <>
+                Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam.
+                <a target='_blank' href='www.wikipedia.com'>Click here to read more</a>
+              </>
+            )
+          },
+          {
+            img: 'https://brightmarbles.io/wp-content/uploads/2023/06/MicrosoftTeams-image-38-1.png',
+            title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+            description: (
+              <>
+                Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam.
+                <a target='_blank' href='www.wikipedia.com'>Click here to read more</a>
+              </>
+            )
+          },
+          {
+            img: 'https://brightmarbles.io/wp-content/uploads/2023/06/MicrosoftTeams-image-38-1.png',
+            title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+            description: (
+              <>
+                Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam.
+                <a target='_blank' href='www.wikipedia.com'>Click here to read more</a>
+              </>
+            )
+          }
+        ]}
+
+      />
       <OpenPositions jobPostings={[
         {
           title: 'Penetration Tester Junior-Senior (UN1QUELY)',
@@ -88,7 +207,29 @@ export const Newsletter = () => {
         jobTitle: 'Software Developper',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt velit nobis magni nulla magnam."
       }]} />
-      <FamilyNews />
+      <FamilyNews
+        title="Wedding Bells Ring at Brightly ❤️"
+        data={[
+          {
+            img: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
+            description: (
+              <>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse est tempore voluptatum! Tenetur delectus impedit mollitia hic maiores? Maiores molestiae doloribus incidunt repellendus rerum!
+                Congratulations to <span> John Doe</span>
+              </>
+            )
+          },
+          {
+            img: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
+            description: (
+              <>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse est tempore voluptatum! Tenetur delectus impedit mollitia hic maiores? Maiores molestiae doloribus incidunt repellendus rerum!
+                Congratulations to <span> John Doe</span>
+              </>
+            )
+          },
+        ]}
+      />
       <Birthdays employees={[{
         name: 'John',
         imgUrl: 'https://brightmarbles.io/wp-content/uploads/2021/06/DSC01206-copy.png'

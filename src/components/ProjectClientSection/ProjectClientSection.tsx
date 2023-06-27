@@ -1,6 +1,13 @@
+import { FC } from "react";
 import styles from "./ProjectClientSection.module.scss";
+import { Paragraph } from "../../common/types";
 
-const ProjectClientSection = () => {
+type ProjectClientSectionProps = {
+  leftParagraphs: Paragraph[]
+  rightParagraphs: Paragraph[]
+};
+
+const ProjectClientSection: FC<ProjectClientSectionProps> = ({ leftParagraphs, rightParagraphs }) => {
   return (
     <div className={styles.wrapper}>
       <div>
@@ -9,56 +16,20 @@ const ProjectClientSection = () => {
       </div>
       <div className={styles.text_section}>
         <div className={styles.paragraph}>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
+          {leftParagraphs?.map((paragraph) => (
+            <p>
+              {paragraph.title && <span>{paragraph.title}</span>}
+              {paragraph.description}
+            </p>
+          ))}
         </div>
         <div className={styles.paragraph}>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
-          <p>
-            <span>Cash Flow: </span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi cumque eveniet quibusdam modi voluptas doloribus culpa vero, architecto, cupiditate fugiat rem nulla, porro odit.
-          </p>
+          {rightParagraphs?.map((paragraph) => (
+            <p>
+              {paragraph.title && <span>{paragraph.title}</span>}
+              {paragraph.description}
+            </p>
+          ))}
         </div>
       </div>
     </div>
