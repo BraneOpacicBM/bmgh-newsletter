@@ -11,7 +11,7 @@ const NewsAndEvents: FC<NewsAndEventsProps> = ({
   data
 }) => (
   <div className={styles.wrapper}>
-    <img src='~/public/news-background.png' style={{ display: 'none' }} alt='background' />
+    <img src='~/public/news-background.jpg' style={{ display: 'none' }} alt='background' />
     <h2>News and Events &#128227;</h2>
     <div className={styles.news_list}>
       {data.map((event) => (
