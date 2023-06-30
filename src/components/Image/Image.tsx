@@ -19,11 +19,11 @@ const Image: FC<ImageProps> = ({ src, height = '100%', width = '100%', alt }) =>
     }}
       className={styles.wrapper}
     >
-      {!isLoaded && (
-        <span>
+      <span>
+        {!isLoaded && (
           <Loader />
-        </span>
-      )}
+        )}
+      </span>
       {
         <img src={src} alt={alt ?? 'image-with-loader'} onLoad={() => {
           setIsLoaded(true)

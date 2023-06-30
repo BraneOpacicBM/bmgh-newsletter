@@ -6,17 +6,21 @@
 
   span {
     position: absolute;
-    top: 20%;
-    left: 30%;
-    right: 30%;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  img {
     .hidden {
-      visibility: hidden;
+      img {
+        visibility: hidden;
+      }
     }
 
     .visible {
-      visibility: visible;
+      img {
+        visibility: visible;
+      }
     }
-  }
 }
