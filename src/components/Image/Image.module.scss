@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  span {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .hidden {
+      img {
+        visibility: hidden;
+      }
+    }
+
+    .visible {
+      img {
+        visibility: visible;
+      }
+    }
+}
