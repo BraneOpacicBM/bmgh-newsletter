@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+  }
+  img {
+    .hidden {
+      visibility: hidden;
+    }
+
+    .visible {
+      visibility: visible;
+    }
+  }
+}
