@@ -16,7 +16,7 @@ const NewsAndEvents: FC<NewsAndEventsProps> = ({
     <div className={styles.news_list}>
       {data.map((event) => (
         <div key={event.title}>
-          <Image src={event.img ?? ''} alt='news' />
+          <Image src={event.img ?? ''} alt='news'  height='300px' />
           <div>
             <p className={styles.title}>{event.title}</p>
             <p className={styles.description}>{event.description}</p>
