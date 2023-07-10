@@ -28,7 +28,7 @@ const QuickUpdate: FC<QuickUpdateProps> = ({
       </div>
       <div className={styles.main_section}>
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p className={styles.description}>{description}</p>
       </div>
       <div className={styles.social_media}>
         <div>

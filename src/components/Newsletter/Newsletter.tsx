@@ -135,7 +135,7 @@ export const Newsletter = () => {
         company={Company.BRIGHT_MARBLES}
         title="We Welcome You All to Our New Office Space in Novi Sad"
         description={
-          <div>
+          <>
             <div>
               Drumroll, please... 🥁 We're thrilled to announce that as of July
               1st, we've unpacked our boxes and set up shop in our shiny new
@@ -155,7 +155,7 @@ export const Newsletter = () => {
               Here's where you can find us: 📍 Đorđa Rajkovića 2, Novi Sad. See
               you there!
             </div>
-          </div>
+          </>
         }
       />
       {/* <QuickUpdate
@@ -204,7 +204,7 @@ export const Newsletter = () => {
         data={[
           {
             img:
-              "https://media.licdn.com/dms/image/D4D22AQEiH2IcikpXWQ/feedshare-shrink_2048_1536/0/1687860675557?e=1691625600&v=beta&t=01YWKTFj65y9lYth4g8_3xMaBNOukdiwb9U20apzpb0",
+              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*vLW-aSxDQkhZXOEU4HHhMQ.jpeg",
             title: "Debate: Test First Development vs. Test Last Development",
             description: (
               <>
