@@ -166,8 +166,8 @@ export const Newsletter = () => {
             you there!
           </div>
         </div>
-      } */}
-    {/* /> */}
+      } 
+    /> */}
       <QuickUpdate
         bgColor="black"
         company={Company.UN1QUELY}
