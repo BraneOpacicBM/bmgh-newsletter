@@ -110,6 +110,11 @@ export const Newsletter = () => {
               "We have completed 24 penetration tests through this partnership in June and July and the demand keeps growing. Projects vary everything from fintech, healthtech, insurance, HR, e-commerce and general SaaS. Due to high demand, we have increased our Security team by 4 new members that start in August. On top, we are expanding the services we offer to Thoropass clients and have workshops scheduled with their CSM teams to train them on selling our other security services. Hero Health - We have completed a very challenging and engaging pentest project for a US healthcare company that manufactures devices for dispensing medication to patients according to their prescriptions. EyeSee - We have completed a very interesting pentest project for a big marketing product company that developed Eye tracking software as a unique behavioral research method measuring eye gaze when performing user research."
           },
           {
+            title: "Publicis",
+            description:
+              "Sadly, the Publicis project has hit an unforeseen roadblock due to the ongoing economic crisis. Because of the current economic challenges, the end client, Holcim, had some budget limitations and opted not to keep the contract going with Publicis. It's important to highlight that our client was quite pleased with the quality of our work, and we want to genuinely thank the team for their hard work and contributions to the project."
+          },
+          {
             title: "Raven",
             description:
               "The project is proceeding according to plan, with all tasks and milestones being met. We’ve also made some tweaks to the team lineup, welcoming new members who've quickly found their stride and are adding value to the project. Development-wise, all systems are a go, with every planned feature being rolled out as planned."
@@ -142,40 +147,40 @@ export const Newsletter = () => {
         ]}
       />
       {/* <QuickUpdate
-      company={Company.BRIGHT_MARBLES}
-      title="We Welcome You All to Our New Office Space in Novi Sad"
-      description={
-        <div>
+        company={Company.BRIGHT_MARBLES}
+        title="We Welcome You All to Our New Office Space in Novi Sad"
+        description={
           <div>
-            Drumroll, please... 🥁 We're thrilled to announce that as of July
-            1st, we've unpacked our boxes and set up shop in our shiny new
-            office in Novi Sad!🥳
+            <div>
+              Drumroll, please... 🥁 We're thrilled to announce that as of July
+              1st, we've unpacked our boxes and set up shop in our shiny new
+              office in Novi Sad!🥳
+            </div>
+            <div>
+              This is more than just a change of address; it's a fresh start,
+              loaded with modern facilities, vibrant workspaces, and a buzzing
+              atmosphere that's going to kick our productivity up a notch.
+            </div>
+            <div>
+              So, how about a firsthand experience of our new office? Swing by,
+              take a tour, soak up the vibes, and join us in toasting to our new
+              chapter.
+            </div>
+            <div>
+              Here's where you can find us: 📍 Đorđa Rajkovića 2, Novi Sad. See
+              you there!
+            </div>
           </div>
-          <div>
-            This is more than just a change of address; it's a fresh start,
-            loaded with modern facilities, vibrant workspaces, and a buzzing
-            atmosphere that's going to kick our productivity up a notch.
-          </div>
-          <div>
-            So, how about a firsthand experience of our new office? Swing by,
-            take a tour, soak up the vibes, and join us in toasting to our new
-            chapter.
-          </div>
-          <div>
-            Here's where you can find us: 📍 Đorđa Rajkovića 2, Novi Sad. See
-            you there!
-          </div>
-        </div>
-      } */}
-    {/* /> */}
+        } */}
+      {/* /> */}
       <QuickUpdate
-        bgColor="white"
+        bgColor="black"
         company={Company.UN1QUELY}
         title="Welcoming New Talent to Our Pentest Team"
         description="A warm shoutout to our newest addition, Strahinja Vuksanović, joining us as a Junior Project Manager! With fresh insights and energy, Strahinja will undoubtedly benefit our projects. We look forward to collaborating with him and witnessing his contributions to our collective success. Together, we'll achieve great things! Welcome aboard, Strahinja! 🚀"
       />
       <QuickUpdate
-        bgColor="black"
+        bgColor="white"
         company={Company.BRIGHTLY}
         title="A Warm Welcome Back: Miloš Vasić Rejoins Our Team"
         description={
@@ -197,23 +202,23 @@ export const Newsletter = () => {
         }
       />
       {/* <QuickUpdate
-      bgColor="blue"
-      company={Company.BRIGHT_MARBLES}
-      title="Lorem ipsum dolor sit amet consectetur adipisicing"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-    />
-    <QuickUpdate
-      bgColor="white"
-      company={Company.BRIGHT_MARBLES_MACEDONIA}
-      title="Lorem ipsum dolor sit amet consectetur adipisicing"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-    />
-    <QuickUpdate
-      bgColor="black"
-      company={Company.BRIGHT_MARBLES_NETHERLANDS}
-      title="Lorem ipsum dolor sit amet consectetur adipisicing"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam." */}
-    {/* /> */}
+        bgColor="blue"
+        company={Company.BRIGHT_MARBLES}
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+      />
+      <QuickUpdate
+        bgColor="white"
+        company={Company.BRIGHT_MARBLES_MACEDONIA}
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+      />
+      <QuickUpdate
+        bgColor="black"
+        company={Company.BRIGHT_MARBLES_NETHERLANDS}
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam." */}
+      {/* /> */}
       <NewsAndEvents
         data={[
           {
@@ -350,7 +355,7 @@ export const Newsletter = () => {
             imgUrl:
               "https://brightmarbles.io/wp-content/uploads/2021/06/DSC01206-copy.png",
             fullName: "Bojana Šatara Anić",
-            jobTitle: "QA Engineer",
+            jobTitle: "Test Engineer",
             description:
               "Milan Stančić: Bojana's dedication to her job is truly remarkable, and it's evident in every aspect of her work. It's not just about completing tasks for her; she genuinely cares about the software she's working on and the impact it will have on users. One of the things that make Bojana stand out is her openness and honesty. Her transparency creates a culture of trust and open communication within the team."
           },
@@ -400,39 +405,39 @@ export const Newsletter = () => {
             fullName: "Bratislav Živaljević",
             jobTitle: "DevOps Engineer",
             description:
-              "Sanel Jovanović: Bratislav took on the Seclo project with unparalleled speed and efficiency, propelling the team and the entire project to a swift completion. He consistently exceeds expectations, even while multitasking. When CloudFormation required a revamp for migration to a new account, Bratislav rose to the challenge. Despite unexpected hurdles with Cognito, he masterfully crafted a solution, turning what seemed impossible into a straightforward task. And those revamped templates? They're now functioning flawlessly. A big applause for Bratislav's unmatched dedication and brilliance!"
+              "Sanel Jovanović: Bratislav took on the Seclo project with unparalleled speed and efficiency, propelling the team and the entire project to a swift completion. He consistently exceeds expectations, even while multitasking. When CloudFormation required a revamp for migration to a new account, Bratislav rose to the challenge. Despite unexpected hurdles with Cognito, he masterfully crafted a solution, turning what seemed impossible into a straightforward task. A big applause for Bratislav's unmatched dedication and brilliance!"
           }
         ]}
       />
       {/* <FamilyNews
-      title="Welcoming Juniors at BrightMarbles 👶"
-      data={[
-        {
-          img:
-            "https://nameitcustomdecor.com.au/cdn/shop/products/IMG_2370.jpg?v=1591945706",
-          description: (
-            <>
-              Join us in extending heartfelt congratulations to our colleague,
-              Martin Berger, and his wife on the birth of their baby boy,
-              Konstantin. We hope Konstantin inherits his dad' strength and
-              resilience. Congratulations to <span> Martin Berger </span>
-            </>
-          )
-        },
-        {
-          img:
-            "https://lilyandwonder.com/cdn/shop/products/Baby-Girl-Disc.jpg?v=1649946496&width=713",
-          description: (
-            <>
-              Warm congratulations to our colleague, Anastasia Bijelić, and
-              her husband on becoming parents of a little bundle of joy named
-              Teodora. May she grow up to be as beautiful and smart as her
-              amazing mom. Congratulations to <span> Anastasia Bijelić </span>
-            </>
-          )
-        }
-      ]}
-    /> */}
+        title="Welcoming Juniors at BrightMarbles 👶"
+        data={[
+          {
+            img:
+              "https://nameitcustomdecor.com.au/cdn/shop/products/IMG_2370.jpg?v=1591945706",
+            description: (
+              <>
+                Join us in extending heartfelt congratulations to our colleague,
+                Martin Berger, and his wife on the birth of their baby boy,
+                Konstantin. We hope Konstantin inherits his dad' strength and
+                resilience. Congratulations to <span> Martin Berger </span>
+              </>
+            )
+          },
+          {
+            img:
+              "https://lilyandwonder.com/cdn/shop/products/Baby-Girl-Disc.jpg?v=1649946496&width=713",
+            description: (
+              <>
+                Warm congratulations to our colleague, Anastasia Bijelić, and
+                her husband on becoming parents of a little bundle of joy named
+                Teodora. May she grow up to be as beautiful and smart as her
+                amazing mom. Congratulations to <span> Anastasia Bijelić </span>
+              </>
+            )
+          }
+        ]}
+      /> */}
       <Birthdays
         employees={[
           {
