@@ -169,13 +169,13 @@ export const Newsletter = () => {
       } */}
     {/* /> */}
       <QuickUpdate
-        bgColor="white"
+        bgColor="black"
         company={Company.UN1QUELY}
         title="Welcoming New Talent to Our Pentest Team"
         description="A warm shoutout to our newest addition, Strahinja Vuksanović, joining us as a Junior Project Manager! With fresh insights and energy, Strahinja will undoubtedly benefit our projects. We look forward to collaborating with him and witnessing his contributions to our collective success. Together, we'll achieve great things! Welcome aboard, Strahinja! 🚀"
       />
       <QuickUpdate
-        bgColor="black"
+        bgColor="white"
         company={Company.BRIGHTLY}
         title="A Warm Welcome Back: Miloš Vasić Rejoins Our Team"
         description={
