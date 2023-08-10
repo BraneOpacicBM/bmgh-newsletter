@@ -25,23 +25,19 @@ export const Newsletter = () => {
           {
             title: "Bench Strength:",
             description:
-              "Since July 1st, we've managed to reduce our bench strength from 23 down to 20 team members. It's an encouraging step, particularly when one factors in the typical summer slowdown. These reductions are a testament to our adaptive strategies and the team's hard work. As we see business operations gain traction, we're confident in our ability to continue this positive trajectory and optimize our resources even further in the upcoming months. "
+              "Since July 1st, we've reduced our bench strength from 23 to 20 members. This is a positive move, especially considering the usual summer slowdown. It highlights the success of our strategic shifts and the team's unwavering dedication. As business conditions get better, we're committed to further optimizing our resources."
           }
         ]}
         rightParagraphs={[
           {
             title: "Profit:",
             description:
-              "We're projecting a net profit margin of approximately 8%. This is noteworthy, marking the best performance we've registered since the beginning of the year. Every percentage point is a collective achievement, and this one's no exception."
+              "Our current projections show a net profit margin of approximately 8%. This represents our strongest performance for the year thus far. It's important to recognize that this progress is a result of our team's collective efforts and dedication."
           },
           {
             title: "Cash Flow:",
             description:
               "Compared to June, we've already seen some improvement in our cash flow, but a substantial change is set to occur in August, once we collect everything that’s been invoiced."
-          },
-          {
-            description:
-              "These incremental gains underscore the value of staying proactive, adaptable, and cohesive as a team. Let's continue to approach the future with informed optimism and dedication!"
           }
         ]}
       />
@@ -60,22 +56,22 @@ export const Newsletter = () => {
           {
             title: "Bielik",
             description:
-              "Bielik emerges as an exciting venture in the realm of crypto brokerage, specifically tailored for the Polish market. Interesting to note, some ex (and potentially soon-to-be ex) LiteBit engineers played pivotal roles in the startup's inception. Our engagement kickstarts with the MVP phase on August 15th, deploying two of our skilled Flutter developers for a span of at least 3 months. After this phase, we'll evaluate the roadmap ahead and decide if we'll continue cooperation."
+              "Bielik has positioned itself as a promising entrant in the crypto brokerage landscape, specifically tailored for the Polish market. Interestingly, some ex (and potentially soon-to-be ex) LiteBit engineers played pivotal roles in the foundation of the startup. Among their lineup is Marko Reljić, a former member of our ranks. Our engagement kickstarts with the MVP phase on August 15th, deploying two of our skilled Flutter developers for at least 3 months. After this phase, we'll evaluate the roadmap and decide if we'll continue cooperation."
           },
           {
             title: "Carna",
             description:
-              "The Carna team is thrilled to announce that we are in the final stages of successfully completing the first release of the Carna Platform. With meticulous planning and dedication, the platform is gradually being prepared for the launch of its first two official projects. The first project is a pioneering initiative for population health screening in Cameroon, specifically targeting chronic kidney diseases. This pilot project will involve approximately 500 patients and will be conducted at two separate testing locations within Cameroon. The experience and insights gained from this project will be instrumental in shaping our future initiatives. The second project represents a significantly larger effort compared to the Cameroon initiative. It focuses on chronic kidney disease screening in Bermuda. The strategic approach and advanced technology implemented will serve as a testament to the capabilities of the Carna Platform. The successful launch of these projects will set the stage for upcoming engagements in Serbia, Australia, and the United Arab Emirates. In the coming weeks, we will witness the Carna Platform in action for the first time in, executing these first official projects for population health screening."
+              "We’re in the final stages of successfully completing the first release of the Carna Platform. The platform is gradually being prepared for the launch of its first two official projects. T First up is our pilot health screening in Cameroon, focusing on chronic kidney diseases. This project will reach about 500 patients across two different locations in Cameroon. The knowledge we gather from this will greatly influence our next steps. Our second project, set in Bermuda, takes on a bigger challenge than the Cameroon one. It's also centered on chronic kidney disease screening, and with our strategic methods and cutting-edge tech, we aim to showcase what the Carna Platform truly has to offer. The successful launch of these projects will set the stage for upcoming engagements in Serbia, Australia, and the United Arab Emirates. In the coming weeks, we will witness the Carna Platform in action for the first time in, executing these first official projects for population health screening."
           },
           {
             title: "Ethiks.ai",
             description:
-              "Exciting developments with Ethiks.ai! Thanks to the quality and professionalism we've consistently showcased, they've handed us a new challenge. We're now on board to produce four videos and several blog articles to boost their marketing. This renewed trust signifies not just their satisfaction but also hints at deeper collaboration on the horizon. If all goes well, we could soon become an integral part of their entire marketing engine."
+              "Exciting developments with Ethiks.ai! Our hard work and professionalism have paid off, earning us a new assignment. We're now tasked with producing four videos and a series of blog articles to boost their marketing. If all goes well, we could soon become an integral part of their entire marketing engine."
           },
           {
-            title: "Greenlite",
+            title: "GreenLite",
             description:
-              "In the past two months, we've been working on a major overhaul of the subscription structure of the application. We completed these efforts with a major new release of the app, introducing a free tier, and allowing users to create a fixed number of free projects to explore the platform and everything it offers! We also had a new addition from BrightMarbles, Desko Sekulović, who joined us on the 17th of July and who is already contributing to the project. Lastly, we are currently in the middle of planning the next bigger initiatives for Greenlite that will be the focus of the 3rd quarter, and we are looking forward to bringing new exciting features to Greenlite customers."
+              "Over the past two months, we've undertaken a significant revamp of the application's subscription structure. This culminated in a major new app release, introducing a free tier. Now, users can set up a limited number of projects at no cost, giving them a taste of all the platform's features! On the personnel front, we welcomed Desko Sekulović from Novi Sad on July 17th. He's already making valuable contributions to the project. Currently, we're mapping out larger initiatives for GreenLite set to be our Q3 focus. We're eager to roll out more exciting features for our GreenLite users."
           },
           {
             title: "HelloAgain",
@@ -117,27 +113,27 @@ export const Newsletter = () => {
           {
             title: "Raven",
             description:
-              "The project is proceeding according to plan, with all tasks and milestones being met. We’ve also made some tweaks to the team lineup, welcoming new members who've quickly found their stride and are adding value to the project. Development-wise, all systems are a go, with every planned feature being rolled out as planned."
+              "The project is proceeding according to plan, with all tasks and milestones being met. We’ve also made some tweaks to the team lineup, welcoming new members who've quickly found their stride and are adding value to the project. Development-wise, all systems are a go, with every planned feature being rolled out as intended."
           },
           {
             title: "Security Operations projects",
             description:
-              "Exciting times lie ahead for our SecOps team. We are in the final stages of winning a huge SecOps deal in the DACH region with a multiyear contract and the opportunity to grow our SecOps team further. We are collaborating with Ernst Young on bidding on a big Security Operations Center project in the region. This service is gaining traction month over month and the expected expansion of the team in the coming months."
+              "Exciting opportunities are on the horizon for our SecOps team as we make strides into the DACH market in the autonomous transportation sector. Furthermore, we're collaborating with Ernst & Young to bid on a big Security Operations Center project in the region. As this service continues to gain momentum month by month, we're anticipating the expansion of our team in the near future."
           },
           {
             title: "Simplify Orange",
             description:
-              "All's good on the Simplify Orange front. Our client has given the thumbs up, expressing satisfaction with our offerings."
+              "All's good on the Simplify Orange front. Our client has given the thumbs up, expressing satisfaction with our services."
           },
           {
             title: "Toogethr",
             description:
-              "At Toogethr, we are actively engaged in the development of an innovative smart parking system. In recent times, we've ramped up thesmart parking system by adding group bookings and catering to the eco-conscious with Electric Vehicle chargers. Our upcoming plans revolve around the ambitious goal of significantly improving gate management at the parking lots. Simultaneously, the development of the cycling app represents our dedication to fostering sustainable transportation alternatives for a cleaner environment."
+              "At Toogethr, we are engaged in the development of an innovative smart parking system. Recently, we've boosted the system by introducing group bookings and adding Electric Vehicle chargers for the eco-conscious. Our next steps focus on improving gate management at the parking lots. At the same time, we're developing a cycling app, showing our commitment to sustainable transport for a greener future."
           },
           {
             title: "vCISO projects and Partnership updates",
             description:
-              "We’re making strides with a potential upsell of our pentest projects, thanks to forging bonds with two leading US Compliance Management entities. Our collaboration with Thoropass partner is reaching new levels every day and continuously expanding. In addition to being their exclusive partner for pentest services, we have now expanded our collaboration, and our other services are being promoted on their website as well and directly pitched to their pool of over 6000 customers. Furthermore, our team has been consistently growing, indicating the high-quality collaboration that benefits both parties. Another key strategic partnership was sealed last week with Secureframe, a leader in compliance management, where all security services and development services shall be offered to their existing pool of over 5000 customers."
+              "We're advancing with a potential upsell of our pentest projects, all thanks to new partnerships with two top US Compliance Management companies. Our work with Thoropass is deepening daily and keeps growing. Besides being their go-to partner for pentest services, our other services are now featured on their site and pitched to their vast 6000-customer base. Our team's growth reflects this strong, mutually beneficial collaboration. We also recently secured a strategic partnership with Secureframe, a leading name in compliance management. We'll be offering all security and development services to their existing 5000+ customers."
           },
           {
             title:
@@ -179,7 +175,7 @@ export const Newsletter = () => {
         title="Welcoming New Talent to Our Pentest Team"
         description="A warm shoutout to our newest addition, Strahinja Vuksanović, joining us as a Junior Project Manager! With fresh insights and energy, Strahinja will undoubtedly benefit our projects. We look forward to collaborating with him and witnessing his contributions to our collective success. Together, we'll achieve great things! Welcome aboard, Strahinja! 🚀"
       />
-      <QuickUpdate
+      {/* <QuickUpdate
         bgColor="white"
         company={Company.BRIGHTLY}
         title="A Warm Welcome Back: Miloš Vasić Rejoins Our Team"
@@ -199,8 +195,8 @@ export const Newsletter = () => {
               Welcome back to the fold, Miloš! 🚀
             </div>
           </div>
-        }
-      />
+        } 
+      />*/}
       {/* <QuickUpdate
         bgColor="blue"
         company={Company.BRIGHT_MARBLES}
@@ -341,7 +337,7 @@ export const Newsletter = () => {
             fullName: "Carna Team",
             jobTitle: "Everybody",
             description:
-              "Darko Kovač: Hats off to the Carna team for their remarkable performance during the Feature Freeze last month! Their dedication and unwavering commitment to excellence are truly impressive, and their commitment to delivering a top-notch product has not gone unnoticed. Keep up the fantastic work!"
+              "Darko Kovač: Kudos to the Carna team for their exceptional performance during last month's Feature Freeze! Their dedication to excellence and commitment to delivering a top-notch product have truly stood out. Keep up the outstanding work!"
           },
           {
             imgUrl:
@@ -349,7 +345,7 @@ export const Newsletter = () => {
             fullName: "Milana Miković",
             jobTitle: "Software Engineer",
             description:
-              "Oliver Šipoš: Milana Miković puts an excellent effort into the Concorde Health project. Milana’s dedication and hard work have been exemplary, especially her adept handling of new technologies and concepts, such as GraphQL and Event Sourcing. Her ability to grasp and apply these innovative ideas to the project has been a significant driving force behind its success."
+              "Oliver Šipoš: Milana Miković has shown outstanding effort on the Concorde Health project. Her dedication and exemplary work ethic, particularly in mastering new technologies and concepts like GraphQL and Event Sourcing, have been instrumental. Milana's aptitude for understanding and applying these innovations has significantly contributed to the project's success."
           },
           {
             imgUrl:
@@ -365,15 +361,15 @@ export const Newsletter = () => {
             fullName: "Aleksandar Beronja",
             jobTitle: "Software Engineer",
             description:
-              "Brane Opačić: Aleksandar Beronja’s teamwork and unwavering support when it comes to front-end technologies is exceptional. His willingness to lend a helping hand speaks volumes about his commitment to fostering a collaborative and productive work environment. Aleksandar’s positive attitude and approachable nature make it easy for others to seek help and feel supported."
+              "Brane Opačić: Aleksandar Beronja’s teamwork and support when it comes to front-end technologies is exceptional. His willingness to lend a helping hand speaks volumes about his commitment to fostering a collaborative and productive work environment. Aleksandar’s positive attitude and approachable nature make it easy for others to seek help and feel supported."
           },
           {
             imgUrl:
-              "https://media.licdn.com/dms/image/D5603AQFptSkC5dMP7g/profile-displayphoto-shrink_800_800/0/1683661005106?e=1696464000&v=beta&t=eE4xBMtqOOD-3B76DvkhLTNBQ1iEul7FOHqHclCxzTE",
+              "https://miro.medium.com/v2/resize:fit:720/format:webp/1*QjxoKPpfrOxungJwxR2ajQ.jpeg",
             fullName: "Viktorija Simonoska",
             jobTitle: "UI/UX Designer",
             description:
-              "Dunja Ibročić: Kudos to Viktorija! Her impressive design skills not only create stunning and innovative design, but also reflect the remarkable ability to attentively follow and understand client's vision, ideas and needs. It is a pleasure to work with such a creative and detail-oriented professional, and truly a team player."
+              "Dunja Ibročić: Kudos to Viktorija for her consistently strong design work. She has a genuine talent for understanding a client's vision and translating it into practical yet innovative designs. Her attention to detail and dedication makes collaboration smooth and productive. It's clear she's not just a great designer but an invaluable team member too."
           },
           {
             imgUrl:
@@ -381,7 +377,7 @@ export const Newsletter = () => {
             fullName: "Legal/Finance Team",
             jobTitle: "Milica & Aleksandra",
             description:
-              "Suzana Vasić: I would like to extend my heartfelt gratitude to Aleksandra and Milica for their unwavering commitment to raising the work of our department to new heights each and every day. Their dedication and tireless efforts have not only improved our team's performance but have also set a remarkable standard for excellence. There is no challenge we cannot conquer together!"
+              "Suzana Vasić: I would like to extend my heartfelt gratitude to Aleksandra and Milica for their commitment to raising the work of our department to new heights each and every day. Their dedication and tireless efforts have not only improved our team's performance but have also set a remarkable standard for excellence. There is no challenge we cannot conquer together!"
           },
           {
             imgUrl:
@@ -389,7 +385,7 @@ export const Newsletter = () => {
             fullName: "Zoran Stanimirović",
             jobTitle: "Android Developer",
             description:
-              "Radivoje Ostojić: Zoran Stanimirovic’s contributions to both the client project and the tech office project are significant! His hard work and dedication have been invaluable in achieving the goals we set at the beginning of the year. The goal is to create a project in Android according to best practices that can be used for all future projects in the company that will be written from scratch, and Zoran’s expertise and commitment have been nothing short of commendable."
+              "Radivoje Ostojić: Zoran Stanimirovic has been instrumental in driving both the client and tech office projects forward. His consistent efforts and commitment are key to hitting our targets set earlier this year. With the aim of developing an Android project grounded in best practices, one that can be used for all future projects in the company that will be written from scratch, Zoran's skills and dedication stand out."
           },
           {
             imgUrl:
@@ -397,7 +393,7 @@ export const Newsletter = () => {
             fullName: "Milena Petrović",
             jobTitle: "Project Manager",
             description:
-              "Mirjana Parpura Đorđević: As the heart of the MTV Payment project, in her role as a Project Manager Milena ensures flawless client communication and navigates any tricky requirements. Beyond her project skills, she's our administrative hero in Niš, sorting out HR matters, and acting as the perfect bridge to the vibrant Niš tech scene. Plus, she orchestrated our new office setup to perfection. A hearty thank you, Milena – you're a true gem in our team!"
+              "Mirjana Parpura Đorđević: Milena is truly the backbone of the MTV Payment project. As the Project Manager, she excels in client interactions and skillfully handles complex requirements. But her impact doesn't stop there. In Niš, she takes on crucial administrative tasks, smoothly handles HR concerns, and connects us to the lively tech community. And let's not forget the amazing job she did setting up our new office. In short, she's an invaluable asset to our team!"
           },
           {
             imgUrl:
