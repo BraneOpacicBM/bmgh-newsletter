@@ -1,5 +1,5 @@
 import styles from "./Newsletter.module.scss";
-// import Header from "../Header/Header";
+import Header from "../Header/Header";
 import ProjectClientSection from "../ProjectClientSection/ProjectClientSection";
 import QuickUpdate from "../QuickUpdate/QuickUpdate";
 import { Company } from "../../common/enums";
@@ -19,28 +19,28 @@ export const Newsletter = () => {
 
   return (
     <div className={styles.newsletter_body}>
-      {/* <Header
+      <Header
         title="August Finance &amp; Project Update"
         leftParagraphs={[
           {
             title: "Bench Strength:",
             description:
-              "Since July 1st, we've reduced our bench strength from 23 to 20 members. This is a positive move, especially considering the usual summer slowdown. It highlights the success of our strategic shifts and the team's unwavering dedication. As business conditions get better, we're committed to further optimizing our resources."
+              "Since August 1st, we've reduced our bench from 20 to 17 people, indicating a steady downwards trend. Members of certain departments have been placed on projects. As new projects arrive, we will employ new people, but only per confirmed project in case we don't have available profiles in house."
           }
         ]}
         rightParagraphs={[
           {
             title: "Profit:",
             description:
-              "Our current projections show a net profit margin of approximately 8%. This represents our strongest performance for the year thus far. It's important to recognize that this progress is a result of our team's collective efforts and dedication."
+              "Our profit has remained stable, maintaining a consistent profit margin of 7% this month."
           },
           {
             title: "Cash Flow:",
             description:
-              "Compared to June, we've already seen some improvement in our cash flow, but a substantial change is set to occur in August, once we collect everything that’s been invoiced."
+              "There was no significant change in our cash flow in August. In the market residuals from the ongoing crisis are still noticeable, the main indicator is that clients still need a little more time to service their obligations. The good thing is that with our clients we are noticing slight improvements, but still not where we want to be. Our strategy to overcome this situation is diversification of the client portfolio which is already happening and telling us that it is a good way to go."
           }
         ]}
-      /> */}
+      />
       <ProjectClientSection
         leftParagraphs={[
           {
@@ -86,7 +86,7 @@ export const Newsletter = () => {
           {
             title: "Intelliya",
             description:
-              "We maximized our efforts within the constraints of our limited access to the client's resources. We conducted a brief presentation for their DevOps Engineer, and it appeared to meet his satisfaction. We are on the verge of completing phase 1 handover, and once that's done, we'll gain more clarity on our next steps."
+              "We maximized our efforts within the constraints of our limited access to the client's resources. We conducted a brief presentation for their DevOps Engineer, and it appeared to meet his satisfaction. We are on the verge of completing a Phase 1 handover, and once that's done, we'll gain more clarity on our next steps."
           },
           {
             title: "LiteBit",
@@ -158,7 +158,7 @@ export const Newsletter = () => {
       />
       <QuickUpdate
         company={Company.BRIGHT_MARBLES}
-        title="Here's a quick peek into the happenings at BrightMarbles"
+        title="Here's a quick peek into the happenings at BrightMarbles:"
         description={
           <div>
             <div>
@@ -183,13 +183,12 @@ export const Newsletter = () => {
             </div>
             <div>
               🏃‍♂️ 10K Belgrade Marathon: We had quite the day on the 9th of
-              October at the "10K Belgrade - Powered by Nike" race. Representing
-              as the official tech partner of the Belgrade Marathon was a proud
-              moment for us. It was heartening to see our colleagues, Branko
-              Džakula, Imre Čileg, Brane Opačić, Sanel Jovanović, and Goran
-              Manojlović, give their best on the track. And, of course, the
-              support from the sidelines was just as spirited. Big thanks to
-              everyone involved!
+              September at the "10K Belgrade - Powered by Nike" race.
+              Representing as the official tech partner of the Belgrade Marathon
+              was a proud moment for us. It was heartening to see our
+              colleagues, Branko Džakula, Imre Čileg, and Sanel Jovanović, give
+              their best on the track. And, of course, the support from the
+              sidelines was just as spirited. Big thanks to everyone involved!
             </div>
           </div>
         }
@@ -220,8 +219,8 @@ export const Newsletter = () => {
               Welcome back to the fold, Miloš! 🚀
             </div>
           </div>
+            />
         } */}
-      {/* /> */}
       {/* <QuickUpdate
         bgColor="blue"
         company={Company.BRIGHT_MARBLES}
@@ -260,7 +259,7 @@ export const Newsletter = () => {
                 in the realm of remote work.
                 <a
                   target="_blank"
-                  href="https://un1quely.com/how-to-build-a-high-performing-cybersecurity-team/"
+                  href="https://un1quely.com/how-to-build-a-high-performing-cybersecurity-team/" rel="noreferrer"
                 >
                   Click here to read more
                 </a>
@@ -284,7 +283,7 @@ export const Newsletter = () => {
                 practice constructive PRs at Bright Marbles? Hop in for a ride!
                 <a
                   target="_blank"
-                  href="https://brightmarbles.io/blog/pull-requests/"
+                  href="https://brightmarbles.io/blog/pull-requests/" rel="noreferrer"
                 >
                   Click here to read more
                 </a>
@@ -308,7 +307,7 @@ export const Newsletter = () => {
                 integrity.
                 <a
                   target="_blank"
-                  href="https://brightmarbles.io/blog/software-architecture/"
+                  href="https://brightmarbles.io/blog/software-architecture/" rel="noreferrer"
                 >
                   Click here to read more
                 </a>
@@ -332,7 +331,7 @@ export const Newsletter = () => {
                 magnify your brand’s impact through social media.
                 <a
                   target="_blank"
-                  href="https://brightmarbles.io/blog/brightmarbles-digital-marketing-services/"
+                  href="https://brightmarbles.io/blog/brightmarbles-digital-marketing-services/" rel="noreferrer"
                 >
                   Click here to read more
                 </a>
@@ -385,7 +384,7 @@ export const Newsletter = () => {
             fullName: "Darko Bučevac",
             jobTitle: "QA Engineer",
             description:
-              "Vedrana Kaloper: Due to Darko's dedication and effort, he is extremely hardworking and responsible. His attention to detail is impeccable, and he consistently puts in the effort to excel. Transitioning to an entirely new role (QA -> DEV) showcases his commitment to mastering new skills. He conducts independent research, demonstrates a proactive attitude, and approaches tasks conscientiously. His work is truly commendable and reflects his unwavering dedication to excellence!"
+              "Vedrana Kaloper: Due to Darko's dedication and effort, he is extremely hardworking and responsible. His attention to detail is impeccable, and he consistently puts in the effort to excel. Transitioning to an entirely new role (QA -> DEV) showcases his commitment to mastering new skills. He conducts independent research, demonstrates a proactive attitude, and approaches tasks conscientiously. His work is truly commendable and reflects his dedication to excellence!"
           },
           {
             imgUrl:
@@ -418,23 +417,23 @@ export const Newsletter = () => {
             jobTitle: "Software Engineer",
             description:
               "Milena Petrović: Miloš’s dedication and hard work have shone brightly on not one but two projects – a testament to his incredible work ethic and skill. His responsiveness is off the charts – quick, helpful, and precise. His commitment to the team is steadfast, and his positive attitude is a breath of fresh air. He brings a level of professionalism that's truly outstanding. Thanks, Miloš, for being such an essential part of the team – your contributions are nothing short of phenomenal!"
+          },
+          {
+            imgUrl:
+              "https://brightmarbles.io/wp-content/uploads/2021/03/DSC007ss23.png",
+            fullName: "Marko Krstanović",
+            jobTitle: "Software Engineer",
+            description:
+              "Nevena Nemeš: Even beyond his core role, Marko consistently crafts tech posts that not only educate but engage, masterfully translating complex tech jargon into relatable content. Hats off to Marko for seamlessly juggling roles and continually lending a much-valued hand to our marketing efforts!"
+          },
+          {
+            imgUrl:
+              "https://brightmarbles.io/wp-content/uploads/2021/06/DSC0s1226.png",
+            fullName: "Kristina Tadić",
+            jobTitle: "Software Engineer",
+            description:
+              "Naq Cyber: Kristina is ace! She consistently delivers exceptional results. Her precision in task execution and fearlessness in seeking clarification or catching overlooked details are remarkable. Her coding skills are top-notch, known for their cleanliness, efficiency, and minimal bugs. Furthermore, her strong grasp of design theory ensures her work not only functions flawlessly but also looks aesthetically pleasing—an uncommon quality in a UI developer. Kristina's confidence in challenging design decisions, combined with her respectful approach, consistently proves invaluable. She is an outstanding asset to the team, and we eagerly anticipate future collaborations with her."
           }
-          // {
-          //   imgUrl:
-          //     "https://miro.medium.com/v2/resize:fit:828/format:webp/1*IbYAwu5FkCnG7MXq-6VW4w.png",
-          //   fullName: "Milena Petrović",
-          //   jobTitle: "Project Manager",
-          //   description:
-          //     "Mirjana Parpura Đorđević: Milena is truly the backbone of the MTV Payment project. As the Project Manager, she excels in client interactions and skillfully handles complex requirements. But her impact doesn't stop there. In Niš, she takes on crucial administrative tasks, smoothly handles HR concerns, and connects us to the lively tech community. And let's not forget the amazing job she did setting up our new office. In short, she's an invaluable asset to our team!"
-          // },
-          // {
-          //   imgUrl:
-          //     "https://miro.medium.com/v2/resize:fit:750/format:webp/1*cMMtR3T5V4PkYno85tDRIg.png",
-          //   fullName: "Bratislav Živaljević",
-          //   jobTitle: "DevOps Engineer",
-          //   description:
-          //     "Sanel Jovanović: Bratislav took on the Seclo project with unparalleled speed and efficiency, propelling the team and the entire project to a swift completion. He consistently exceeds expectations, even while multitasking. When CloudFormation required a revamp for migration to a new account, Bratislav rose to the challenge. Despite unexpected hurdles with Cognito, he masterfully crafted a solution, turning what seemed impossible into a straightforward task. A big applause for Bratislav's unmatched dedication and brilliance!"
-          // }
         ]}
       />
       <FamilyNews
@@ -449,7 +448,7 @@ export const Newsletter = () => {
                 arrival of their baby girl, Sofija. May the wisdom that
                 symbolizes her name be a guiding light leading her through every
                 step of life’s adventure. Congratulations to{" "}
-                <span> Radivoje Ostojić </span>
+                <span> Radivoje Ostojić! </span>
               </>
             )
           },
@@ -462,7 +461,19 @@ export const Newsletter = () => {
                 father to a beautiful baby girl! Wishing you and your family all
                 the happiness as you embark on this wonderful journey of
                 parenthood. Enjoy every moment with your precious little one.
-                Congratulations to <span> Danilo Kukrić </span>
+                Congratulations to <span> Danilo Kukrić! </span>
+              </>
+            )
+          },
+          {
+            img:
+              "https://i.pinimg.com/originals/9d/4a/19/9d4a1990e7359af436f8e1ae5b782212.jpg",
+            description: (
+              <>
+                A big congratulations to our colleague Miloš, who became the
+                father of an adorable baby boy. We wish you and your family a
+                world of joy, laughter, and countless precious moments!
+                Congratulations to <span> Miloš Milić! </span>
               </>
             )
           }
