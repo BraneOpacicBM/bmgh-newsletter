@@ -7,337 +7,324 @@ import NewsAndEvents from "../NewsAndEvents/NewsAndEvents";
 import OpenPositions from "../OpenPositions/OpenPositions";
 import ThreeColorDivider from "../ThreeColorDivider/ThreeColorDivider";
 import Colleagues from "../Colleagues/Colleagues";
+import FamilyNews from "../FamilyNews/FamilyNews";
 import Birthdays from "../Birthdays/Birthdays";
 import Contributions from "../Contribution/Contribution";
 import useVerify from "../../hooks/useVerify";
-import FamilyNews from "../FamilyNews/FamilyNews";
 
 export const Newsletter = () => {
-  const { loading, isVerified } = useVerify()
+  const { loading, isVerified } = useVerify();
 
-  if (loading || !isVerified) return null
+  if (loading || !isVerified) return null;
 
   return (
     <div className={styles.newsletter_body}>
       <Header
-        title="August Finance &amp; Project Update"
+        title="September Finance &amp; Project Update"
         leftParagraphs={[
           {
             title: "Bench Strength:",
             description:
-              "Since August 1st, we've reduced our bench from 20 to 17 people, indicating a steady downwards trend. Members of certain departments have been placed on projects. As new projects arrive, we will employ new people, but only per confirmed project in case we don't have available profiles in house."
-          }
+              "In September, we saw a slight dip in our bench strength, going from 17 to 16 people. Since we have many new projects kicking off or in the pipeline, we've been proactive in prepping available colleagues with the right skill sets for upcoming interviews and project onboarding. So, you can expect at least 3 of them to get assigned to projects in the coming days.",
+          },
         ]}
         rightParagraphs={[
           {
             title: "Profit:",
             description:
-              "Our profit has remained stable, maintaining a consistent profit margin of 7% this month."
+              "On the financial side, September witnessed our profit margin dipping to 2%, a change primarily due to the wrap-up of our partnership with Litebit. Nevertheless, with several promising projects in the invoicing pipeline, we're optimistic about seeing a notable boost in our profit margins as these projects become active.",
           },
           {
             title: "Cash Flow:",
             description:
-              "There was no significant change in our cash flow in August. In the market residuals from the ongoing crisis are still noticeable, the main indicator is that clients still need a little more time to service their obligations. The good thing is that with our clients we are noticing slight improvements, but still not where we want to be. Our strategy to overcome this situation is diversification of the client portfolio which is already happening and telling us that it is a good way to go."
-          }
+              "In September, our cash flow remained relatively stable. We're still grappling with delayed payments from some clients, a byproduct of the current crisis. Rest assured; our team is working diligently to manage these delays. Furthermore, our ongoing efforts to diversify our client portfolio have already shown promise as a strategic step forward. Consequently, we remain on course towards a positive trajectory.",
+          },
         ]}
       />
       <ProjectClientSection
         leftParagraphs={[
           {
-            title: "Bielik",
+            title: "26bits (Porsche)",
             description:
-              "On August 15th, we deployed two of our skilled Flutter developers, and the team has recently been expanded by one Frontend developer."
+              "At 26bits, the project is scheduled to be completed by the end of October, and we are discussing the possibility of continuing it after this period.",
           },
           {
-            title: "Ceres",
+            title: "Alithya",
             description:
-              "We’ve completed several minor tasks for them, and in the following weeks we’ll meet with them to discuss the infrastructure redesign."
+              "Alithya, a prominent North American tech firm based in Canada, reached out to us for a collaboration. We successfully executed a video project for them and received positive feedback. Given the success of our initial venture, we are in discussions about expanding our services and continuing our partnership.",
+          },
+          {
+            title: "Anycoin",
+            description:
+              "At the Anycoin project, our team is currently focused on the redesign of the website.",
+          },
+          {
+            title: "Bielik",
+            description:
+              "With Bielik, we have extended our collaboration by one additional month. The team is currently focused on the MVP, finalizing the Authorization flow, with some essential initial screens already completed (Markets and Wallet screens). The next step is the implementation of localization.",
+          },
+          {
+            title: "Carna",
+            description:
+              "At Carna Projects, the team has successfully secured a seed investment of $1.17 million, surpassing their initial target of $1 million. They are now actively preparing for the second phase of their seed funding and have plans to enter the Series A round within the coming year. The team is currently focused on preparations for their first two projects, Bermuda and Cameroon. The Bermuda project involves screening the population for chronic kidney disease and will be covered by the American media company Newsweek. Additionally, our team at Carna Projects has adopted the SCRUM framework and has implemented refinements in their work processes. There is noticeable technical progress in product development. ",
           },
           {
             title: "Concorde Health",
             description:
-              "The project is advancing as scheduled, both in terms of its design and development phases."
+              "At Concorde Health, we've reached the first milestone by releasing the web app to the client on the staging environment. The mobile app version is expected to be released in the next day or two.",
+          },
+          {
+            title: "Costa Coffee",
+            description:
+              "On the Costa Coffee project, the team is in the process of transitioning the app to SwiftUI and is working on integrating it with the Braze customer engagement platform.",
+          },
+          {
+            title: "Crayon",
+            description:
+              "At Crayon, everything is going well. We're currently in discussions with a client regarding a potential new project.",
           },
           {
             title: "Crayon STADA",
             description:
-              "The client has requested a proposal for one full-time position for the upcoming year."
+              "BMGH has an opportunity for an additional project, which involves implementing a system that the client purchased on Kubernetes for the entire STADA group.",
           },
           {
             title: "Ethiks.ai",
             description:
-              "As you know, the Ethiks project has been one of our pivotal ventures this year, and we're delighted to report that things are progressing really well. The most recent highlight is the signing of a new contract. This expansion in our partnership involves providing Ethiks with content writing services, which opens doors for further collaboration in areas where we have demonstrated expertise."
+              "We're handling Ethiks's full marketing suite now. Our current work centers around producing both video and written content for them.",
           },
           {
-            title: "Fireside",
+            title: "Greenlite",
             description:
-              "We are switching the focus towards building strong networks around the influential content creators on their platform. This way Fireside aims to empower their users to purchase membership passes and get special access to the content created by their favorites. Fireside also recently made some breakthroughs towards Amazon TV, and focused their efforts on testing and upgrading their CTV app."
-          },
-          {
-            title: "GreenLite",
-            description:
-              "On GreenLite, since our last update, we've worked on delivering key improvements based on user feedback for the most recent batch of features. Our focus this period was the platform internal tools used by GreenLite employees to manage and review the customer construction projects. Going forward, our next big goal is further improving those internal tools by overhauling and improving the construction set document review capabilities."
+              "Since the last update we've introduced two new key components: The map view for clients to better visualize the spread of their projects across the US. The second major feature has been the enhanced document viewer with review capabilities used by Greenlite to provide quick and easy feedback on client projects. We've also made several improvements, mostly related to the project review portal and the login workflow. We are now in the process of planning the next steps and specifying general architecture improvements to be worked on in the next quarter.",
           },
           {
             title: "HelloAgain",
             description:
-              "Development has continued at a reduced pace due to the holiday season, with no new deployments over the past few weeks. The current version is stable."
+              "HelloAgain has recently onboarded several new clients onto their platform. Currently, Nenad Stojković is working on customizing the platform for one of their largest clients to date.",
           },
+        ]}
+        rightParagraphs={[
           {
-            title: "Intelliya",
+            title: "MTV",
             description:
-              "We maximized our efforts within the constraints of our limited access to the client's resources. We conducted a brief presentation for their DevOps Engineer, and it appeared to meet his satisfaction. We are on the verge of completing a Phase 1 handover, and once that's done, we'll gain more clarity on our next steps."
-          },
-          {
-            title: "LiteBit",
-            description: "The project finally closed on August 31."
-          },
-          {
-            title: "MijnDomein",
-            description:
-              "There were no significant changes at MijnDomein in August. Besides the regular roadmap, in August we planned to start working on hackathon projects (ones we worked on at the get-together event in July). Because a lot of people were on summer holidays, hackathon projects will be moved to September."
+              "Everything is progressing smoothly on the project for our MTV client. Our team is currently in the final phase, and the presentation of the current solution to the client was successful. We are on track to complete the project within the defined timeline.",
           },
           {
             title: "MTV SysAdmin",
             description:
-              "The client applied for the CyberEssentialPlus certificate, and we’re awaiting additional tasks. Other than that, there are some smaller tasks for us to finish before they move into maintenance mode."
-          }
-        ]}
-        rightParagraphs={[
+              "In the MTV SysAdmin project, an audit has been scheduled for the beginning of November. Our team's task was to prepare the client for this audit. Regrettably, one of our team members can no longer support the client, and it is likely that we will terminate this cooperation after the audit.",
+          },
           {
             title: "NAQ",
             description:
-              "We’ve successfully finished everything that was asked of us, and we’re soon expecting their feedback. We’ll discuss a more extensive collaboration after they receive the next round of financing."
-          },
-          {
-            title: "Partnership updates",
-            description:
-              "Our collaboration with Thoropass partner is reaching new levels every day and continuously expanding as you may have seen on our social media channels. We have conducted training for their CS staff to sell all our services to their customers and expect a rise in leads generated by this partner in the coming weeks. We are expanding our partnership network and have signed another partner A-lign to the roaster."
+              "In the NAQ project, our team is primarily focused on the development of a new version of the application, and we are currently in the final stages of this process.",
           },
           {
             title: "Penetration Testing projects",
             description:
-              "We are experiencing a high volume in demand for penetration tests from our partner Thoropass (Laika) and 1to1 sales, with a record of over 40 penetration testing projects in the pipeline in the next three months. We are also seeing a rise in organic growth of leads through recommendations from current customers and social media outreach."
-          },
-          {
-            title: "Polity",
-            description:
-              "One of our newest clients, Polity Network, is a new generation crypto wealth management network for professional advisors and qualified investors. We started the project with one developer for now, so we’ll see how things will proceed from there."
+              "The past few months have been exceptional for our Pentesting services, marked by a record number of customers served and projects successfully completed. Our revenue has doubled in just two months. Additionally, we are experiencing significant organic growth in leads, driven by recommendations from our existing customers and partners. To meet this high demand, we have recently welcomed a new team member, and starting from November 1st, we will be adding another Senior Penetration Tester with expertise in security research and red team exercises.",
           },
           {
             title: "Raven",
             description:
-              "Development has picked up without any slowdown, with ongoing efforts concentrated on expanding existing features and bolstering system stability. We are actively working to refine current functionalities while also implementing additional layers of stability to ensure a seamless user experience."
-          },
-          {
-            title: "Secfix",
-            description:
-              "Project is moving along according to the plan. We’re awaiting confirmation of the final date to switch to a new infrastructure that was built a few months ago."
+              "We are pleased to spotlight the exceptional performance of our team members, Imre Čileg and Goran Simić, who have been diligently serving one of our latest cryptocurrency clients, Anycoin. Their commitment and professional expertise have greatly contributed to Anycoin's excellent performance. Their efforts have not only met but exceeded client expectations, leading to high praise and appreciation from Anycoin. We are confident that their continued dedication will further enhance our partnership with Anycoin and contribute to sustained success.",
           },
           {
             title: "Security Operations projects",
             description:
-              "We are in the final round for a big client in the DACH region to win a multiyear SecOps project that will unlock further scaling of this service and team."
+              "In our Security Operations projects, we are actively pursuing new opportunities in the SecOps field. We are bidding on several projects in collaboration with local partners such as Vega and PwC, as well as exploring international prospects in Germany. Cloud configuration reviews and compliance related SecOps engagements continue to be in high demand, keeping our SecOps team members fully occupied.",
           },
           {
-            title: "Simplify Orange",
+            title: "Toogethr Parking & Drive",
             description:
-              "The client increased the year-end budget from 250 hours to 450 hours. We're currently in talks regarding the formation of the complete team."
+              "Toogethr Drive: Our team is in the process of releasing a new version of Gate Management and is also actively working on integrating third-party systems for electronic car charging at various locations, as well as enabling payment for parking using the EasyPark system. At Toogethr Parking, the team remains highly committed to the development of an innovative smart parking system. Recent efforts have predominantly revolved around improving Electric Vehicle charging infrastructure. Additionally, the team is currently concentrating on making significant enhancements to the parking lot Gate Management.",
           },
           {
-            title: "Toogethr",
+            title: "vCISO projects and Partnership updates",
             description:
-              "The project is currently in feature freeze due to a number of employees absent on summer holidays. Focused on improving gate management functionality and putting more accent on quality and testing."
+              "We have recently brought on board a new partner for our vCISO and other security services, and we are actively negotiating additional partnership agreements to broaden our sales channels and enhance our resilience. We are consistently generating new leads every week, and our team is diligently working on finalizing longer-term vCISO projects with the aim of expanding our team by the year's end.",
           },
           {
-            title:
-              "26bits (Porsche), Adriaan, Anycoin, Aurum Fitness, Carna Health, Crayon, Hadrian, and MTV:",
-            description: "Business as usual."
-          }
+            title: "Aurum Fitness, Hadrian, MijnDomein, Simplify Orange",
+            description: "Business as usual.",
+          },
         ]}
       />
       <QuickUpdate
         company={Company.BRIGHT_MARBLES}
-        title="Here's a quick peek into the happenings at BrightMarbles:"
+        title=" DM Women’s Race at Ada Ciganlija 🏃‍♀️🏃🏿‍♀️"
         description={
           <div>
             <div>
-              🛠 Polished Processes: While many used the vacation season to bask
-              in the sun, we took the time to review and polish a few things
-              internally. Our sales processes, in particular, have seen some
-              work. We've made efforts to streamline and make things a bit more
-              efficient. Hopefully, you'll notice the smoother flow in the
-              coming weeks.
+              Last Sunday (Oct 1), the DM Women’s Race took center stage at Ada
+              Ciganlija. This significant event, organized by the Belgrade
+              Marathon, witnessed a remarkable turnout of over 2,000
+              participants. As the tech partners of the event, we at
+              BrightMarbles are proud to have played a role in an event bursting
+              with such magnificent energy. ️✨
             </div>
             <div>
-              💡 Tech Officers' Meeting: Our Tech Officer team recently had a
-              highly productive meeting. They've hashed out a few things, made
-              some decisions, and are looking forward to implementing changes
-              aimed at better functioning. Engineers, you might find a few
-              updates coming your way, geared towards enhancing our workflow.
+              Not to be left out, our BrightMarbles team was well-represented on
+              the track. Kudos to our very own Mibsters – Zlata Solarov, Daniela
+              Červeni, Kristina Tadić, Anja Jovičin, and Ivana Grbić – who laced
+              up their running shoes and took on the 7,7km challenge. Their
+              spirit perfectly reflects the talent and passion we champion
+              within our ranks. 👟🌟
             </div>
             <div>
-              So, how about a firsthand experience of our new office? Swing by,
-              take a tour, soak up the vibes, and join us in toasting to our new
-              chapter.
-            </div>
-            <div>
-              🏃‍♂️ 10K Belgrade Marathon: We had quite the day on the 9th of
-              September at the "10K Belgrade - Powered by Nike" race.
-              Representing as the official tech partner of the Belgrade Marathon
-              was a proud moment for us. It was heartening to see our
-              colleagues, Branko Džakula, Imre Čileg, and Sanel Jovanović, give
-              their best on the track. And, of course, the support from the
-              sidelines was just as spirited. Big thanks to everyone involved!
+              Girls, we’re incredibly proud of you. Let's continue to shine
+              brightly in all that we do!
             </div>
           </div>
         }
       />
-      <QuickUpdate
-        bgColor="black"
-        company={Company.UN1QUELY}
-        title="Welcoming New Talent to Our Pentest Team"
-        description="We're thrilled to introduce Darko Milanović, our new Penetration Tester! 😊 Darko's role as an expert in this crucial field adds a significant layer of security knowledge to our team. With his insights, we're further empowered to ensure the safety and integrity of our systems. Darko, we're looking forward to the future endeavours!"
-      />
       {/* <QuickUpdate
         bgColor="white"
         company={Company.BRIGHTLY}
-        title="A Warm Welcome Back: Miloš Vasić Rejoins Our Team"
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+      /> -->
+      <QuickUpdate
+        bgColor="black"
+        company={Company.BRIGHTLY}
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
         description={
           <div>
             <div>
-              Team, we've got some amazing news to share. Remember our talented
-              intern, Miloš Vasić? We're pleased to announce that Miloš is
-              rejoining our ranks, lending his expertise to the MTV Payment
-              project as a React Developer. Given his past performance and
-              unwavering commitment, we're confident he'll bring a new dimension
-              of excellence to the initiative. So, without further ado, let’s
-              extend a warm welcome back to Miloš.
+              Description can be in form of text(string) or you can pass html as
+              this example show 💙
             </div>
             <div>
-              We're absolutely sure you're going to crush it in this role.
-              Welcome back to the fold, Miloš! 🚀
+              Description can be in form of text(string) or you can pass html as
+              this example show 💙
             </div>
           </div>
-            />
-        } */}
+        }
+      />{" "} */}
       {/* <QuickUpdate
         bgColor="blue"
         company={Company.BRIGHT_MARBLES}
         title="Lorem ipsum dolor sit amet consectetur adipisicing"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-      />
-      <QuickUpdate
+      /> */}
+      {/* <QuickUpdate
         bgColor="white"
         company={Company.BRIGHT_MARBLES_MACEDONIA}
         title="Lorem ipsum dolor sit amet consectetur adipisicing"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-      />
-      <QuickUpdate
+      /> */}
+      {/* <QuickUpdate
         bgColor="black"
         company={Company.BRIGHT_MARBLES_NETHERLANDS}
         title="Lorem ipsum dolor sit amet consectetur adipisicing"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam." */}
-      {/* /> */}
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+      /> */}
+      <QuickUpdate
+        bgColor="black"
+        company={Company.UN1QUELY}
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
+        description="Exciting news! 🎉 We're thrilled to announce that Stevan Vučić has joined our team as a Penetration Tester. Stevan brings valuable expertise to our cybersecurity efforts, and we're looking forward to the positive impact he'll make. UN1QUELY hits the 2-year milestone! 🎂 A heartfelt thanks to each one of you for your consistent support through this journey. Your belief and trust in us have been a cornerstone of our story. As we look ahead, we're energized to chase bigger dreams and achievements. Thank you for being an integral part of our narrative! "
+      />
       <NewsAndEvents
         data={[
           {
-            img:
-              "https://un1quely.com/wp-content/uploads/2023/08/featured-photo.jpg",
+            img: "https://brightmarbles.io/wp-content/uploads/2023/09/Krstanovic-Blog-Cover-1.jpg",
             title:
-              "How to Build a High-Performing Cybersecurity Team (by Branko Džakula)",
+              "Painting Your Flutter App with ‘ThemeData’ and ‘ColorScheme’ Magic (by Marko Krstanović)",
             description: (
               <>
-                Are you intrigued by the prospect of how an unparalleled
-                security team is assembled? Branko Džakula explores the notion
-                that building a team requires more than technical expertise,
-                encompassing an array of soft skills and core values. Branko
-                underlines just how important cultural fit is in order to find
-                individuals who complement and enhance our collective
-                capabilities. He further explores trust, transparency, and
-                ethics as values with a profound impact on team dynamics, even
-                in the realm of remote work.
+                Have you ever wondered how to seamlessly integrate a refined
+                color scheme into your Flutter app? Marko Krstanović takes us on
+                an enlightening journey to explore how ‘ThemeData’ can be your
+                guiding light in the world of Flutter app design. Marko states
+                that ‘ThemeData’ is dynamic and versatile, therefore
+                transcending static design and defining the essence of the app’s
+                visual identity. ‘ThemeData’, together with the invaluable
+                ‘ColorScheme’, crafts an experience that’s both visually
+                captivating and consistently coherent.
                 <a
                   target="_blank"
-                  href="https://un1quely.com/how-to-build-a-high-performing-cybersecurity-team/" rel="noreferrer"
+                  href="https://brightmarbles.io/blog/painting-your-flutter-app-with-themedata-and-colorscheme-magic/"
                 >
                   Click here to read more
                 </a>
               </>
-            )
+            ),
           },
           {
-            img:
-              "https://brightmarbles.io/wp-content/uploads/2023/08/image-6.png",
+            img: "https://brightmarbles.io/wp-content/uploads/2023/09/MicrosoftTeams-image-79-min.png",
             title:
-              "How to Handle Pull Requests Without Making Enemies: A Guide for the Diplomatic Developer (by Darko Kovač)",
+              "Geek Meets Ink: Full-Stack Digital Writers Rewriting the Rules (by Svetlana Kosić)",
             description: (
               <>
-                Pull requests (PRs) can be a touchy subject for developers, and
-                Darko Kovač gives his insight into how to handle them with
-                grace. Darko underlines the importance of communication,
-                focusing on the code itself, and not the person, as well as
-                positive feedback. He emphasizes the fact that there is a human
-                behind the code, and that framing your feedback as a suggestion
-                would be the path of least resistance. Want to know how we
-                practice constructive PRs at Bright Marbles? Hop in for a ride!
+                If you assumed that the ‘full-stack’ term is only reserved for
+                the techies, think again. In today’s rapidly evolving landscape
+                of digital content, writers have undergone a transformation,
+                becoming full-stack content creators. Svetlana defines them as
+                someone who can handle the full spectrum of digital content, and
+                who is always mindful of how their work resonates with both
+                algorithms and audiences. Dive into the different facets of
+                digital content creation, each with its own distinct approach
+                and specific goals and strategies for achieving them.
                 <a
                   target="_blank"
-                  href="https://brightmarbles.io/blog/pull-requests/" rel="noreferrer"
+                  href="https://brightmarbles.io/blog/geek-meets-ink-full-stack-digital-writers-rewriting-the-rules/"
                 >
                   Click here to read more
                 </a>
               </>
-            )
+            ),
           },
           {
-            img:
-              "https://brightmarbles.io/wp-content/uploads/2023/08/image-3-1024x683.png",
+            img: "https://un1quely.com/wp-content/uploads/2023/09/cover-un1.jpg",
             title:
-              "Decoding Software Architecture: The Essential Role of Architectural Decision Records (ADRs) (by Nenad Stojković)",
+              "Custom Software Solutions: Why a Security-First Approach Matters (by Lazar Vukašinovic)",
             description: (
               <>
-                Nenad discusses Architectural Decision Records (ADRs) as one of
-                the effective ways of documenting architectural decisions.
-                Consisting of Architecturally Significant Requirements (ASR) and
-                Architectural Decisions (AD), ADR both fortifies the
-                architectural framework and ensures that the logic behind each
-                decision is within reach for all team members. Jump in Nenad’s
-                exploration of the key components of ADR and how to preserve its
-                integrity.
+                Placing security at the forefront of the software development
+                process is becoming essential in today’s rising threat
+                landscape. Lazar Vukašinović explores why security-first
+                approach is important, especially for decision-makers in tech
+                SMEs and startups. He highlights that cyber-attacks can be not
+                only expensive for the company, but also cause operational
+                disruptions to business processes. Ensuring the security of your
+                custom software also protects your brand reputation and give
+                your brand a competitive edge in today’s saturated market.
                 <a
                   target="_blank"
-                  href="https://brightmarbles.io/blog/software-architecture/" rel="noreferrer"
+                  href="https://un1quely.com/why-a-security-first-approach-matters/"
                 >
                   Click here to read more
                 </a>
               </>
-            )
+            ),
           },
           {
-            img:
-              "https://brightmarbles.io/wp-content/uploads/2023/08/image-2-1024x682.jpeg",
+            img: "https://brightmarbles.io/wp-content/uploads/2023/09/UX-blog_blog-cover.png",
             title:
-              "Empowering Brands through Full-Spectrum Digital Services: BrightMarbles Approach (by Nevena Berat)",
+              "UX Design: The Binding Tissue Between People and Technology (by Marko Vladušić)",
             description: (
               <>
-                Full spectrum digital services can help brands to not just
-                survive but excel with their online presence. Nevena Nemes
-                explains BrightMarbles’ approach that implies a holistic digital
-                approach, which in turn helps create impactful and resilient
-                strategies. Nevena describes how it’s best to begin by exploring
-                the business objectives and market dynamics in order to create a
-                narrative that resonates with the brand’s audience and helps
-                magnify your brand’s impact through social media.
+                Serving as the nexus between innovation and usability, UX design
+                humanizes technology, positioning users at the epicenter of the
+                design process. Marko Vladušić delves into how UX design ensures
+                digital products aren't just functional but also enjoyable and
+                intuitive. He emphasizes that, in this approach, technology
+                solutions are shaped by users' needs, habits, and goals rather
+                than imposing a predefined structure on them. Explore the
+                significance of UX design for startups, and understand how BM
+                aids customers in their quest to craft an MVP that not only
+                works but delights.
                 <a
                   target="_blank"
-                  href="https://brightmarbles.io/blog/brightmarbles-digital-marketing-services/" rel="noreferrer"
+                  href="https://brightmarbles.io/blog/ux-design-the-binding-tissue-between-people-and-technology/"
                 >
                   Click here to read more
                 </a>
               </>
-            )
-          }
+            ),
+          },
         ]}
       />
       <OpenPositions
@@ -345,13 +332,13 @@ export const Newsletter = () => {
           {
             title: "Identity and Access Management Engineer (UN1QUELY)",
             postingUrl:
-              "https://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002674001/Identity-and-Access-Management-Engineer?source=CareerSite"
-          }
-          // {
-          //   title: "Penetration Tester (UN1QUELY)",
-          //   postingUrl:
-          //     "https://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002466166/Penetration-Tester?source=CareerSite"
-          // }
+              "https://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002674001/Identity-and-Access-Management-Engineer?source=CareerSite",
+          },
+          {
+            title: "Penetration Tester (UN1QUELY)",
+            postingUrl:
+              "https://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002466166/Penetration-Tester?source=CareerSite",
+          },
           // {
           //   title: "Junior Project Manager (UN1QUELY)",
           //   postingUrl:
@@ -364,198 +351,171 @@ export const Newsletter = () => {
         colleagues={[
           {
             imgUrl:
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*DIVvWAev8ga80WeBIUHdLA.png",
-            fullName: "Concorde Health",
-            jobTitle: "Dušan & Ognjen",
+              "https://brightmarbles.io/wp-content/uploads/2021/02/join-us.gif",
+            fullName: "Radivoje & Martin",
+            jobTitle: "Software Engineers",
             description:
-              "Brane Opačić: Dušan and Ognjen have truly set the bar high with their remarkable contributions to the Concorde Health web application. Their synergy and dedication have translated into an instant and impressive transformation of the platform. Kudos to this dynamic duo for their outstanding work, making waves right from the start!"
+              "Marko Krstanović: Radivoje Ostojić and Martin Berger stand out not only for their willingness to assist and guide but also for their remarkable problem-solving skills. They approach problems with a methodical and analytical mindset. Their ability to dissect problems, identify root causes, and implement practical solutions has been a source of inspiration for me. Their presence on our Mobile dev team is a source of inspiration for all of us, and we are fortunate to have them as colleagues.",
           },
           {
             imgUrl:
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*XL0UDwETHxNzFko3UPOCaw.png",
-            fullName: "Raven team",
-            jobTitle: "Everybody",
-            description:
-              "Darko Kovač: I want to commend the entire Raven team for their remarkable progress and exceptional display of teamwork. The unity and camaraderie within the team have undoubtedly contributed to our achievements, fostering an environment where ideas flourish and challenges are overcome together."
-          },
-          {
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2022/04/DSC0131sss7.png",
-            fullName: "Darko Bučevac",
-            jobTitle: "QA Engineer",
-            description:
-              "Vedrana Kaloper: Due to Darko's dedication and effort, he is extremely hardworking and responsible. His attention to detail is impeccable, and he consistently puts in the effort to excel. Transitioning to an entirely new role (QA -> DEV) showcases his commitment to mastering new skills. He conducts independent research, demonstrates a proactive attitude, and approaches tasks conscientiously. His work is truly commendable and reflects his dedication to excellence!"
-          },
-          {
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/06/DSC011sss22.png",
-            fullName: "Daniel Kupčo",
+              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*GUt-n3KoqcV7vALZ1Ron-A.png",
+            fullName: "Mladen Bojović",
             jobTitle: "Software Engineer",
             description:
-              "Vedrana Kaloper: Daniel's proactive approach sets him apart – he consistently takes the initiative by delving several steps ahead and autonomously explores potential solutions or root causes. His rationality shines through, making his insights invaluable, especially in project estimations, whether temporal or technical. His reliability from a technical standpoint, along with his pragmatic and realistic perspectives, greatly influences and enhances our collaborative efforts."
+              "Dušan Ilić: Mlađa has been amazing. He's been great on the WeaverPeer and MTV projects, and he's also helped others. His skills with Azure Cloud have grown a lot. He's been a team player, making us stronger. Mlađa's coding has saved time on MTV and helped other projects. He's been a big help to Božić and Braca when Vlada was away. Mlađa, you're important to our team. Keep up the good work!",
           },
           {
             imgUrl:
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*wfKC7chsZfyCM744i3G4Vg.png",
-            fullName: "Nastasija Trajanova",
-            jobTitle: "Marketing Specialist",
+              "https://scontent.fbeg5-1.fna.fbcdn.net/v/t39.30808-6/269935358_106127305273904_74157529001331114_n.png?_nc_cat=109&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=y0CTWzNJHz0AX9puSbk&_nc_ht=scontent.fbeg5-1.fna&oh=00_AfBaV4RRolqKUtB20Yzde8MXtGvuTeoFzf8Os6sYG8o1uQ&oe=652AACFF",
+            fullName: "UN1QUELY",
+            jobTitle: "Cybersec Team",
             description:
-              "Nevena Nemeš: Staša is the embodiment of reliability and thoroughness in our team. Not only is she a trusted colleague, but her tenacity stands out—what she doesn’t know, she diligently researches and executes brilliantly. Working alongside her is both an assurance and a delight. Kudos, Staša!"
+              "Boris Berat: The exceptional UN1QUELY cybersecurity team, led by Branko, is truly one-of-a-kind, and they deserve a massive shoutout. They've been absolutely outstanding, especially during these challenging times. Their dedication and commitment have been off the charts, and they've consistently delivered record-breaking results. Their team spirit, which is at an all-time high, is even more impressive. Seeing their energy and motivation has been a source of inspiration. I want to extend a huge thank you to each and every member of the team. You guys truly rock!",
           },
-          {
-            imgUrl:
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*rmh4zHnNrJVZv--fLb2PQA.png",
-            fullName: "Milica Pališaški",
-            jobTitle: "QA Engineer",
-            description:
-              "Milan Stančić: Milica deserves high praise for her exceptional dedication to her work. She not only diligently tends to her responsibilities but also cultivates transparent communication, both within the team and with clients. Her proactive approach shines during refinements, and she adeptly handles new challenges that come her way."
-          },
-          {
-            imgUrl:
-              "https://media.licdn.com/dms/image/D4D03AQEd5M9RrjS2Cw/profile-displayphoto-shrink_800_800/0/1668608665318?e=1699488000&v=beta&t=sFapLskHhOQlUQj8opSDwN-Z0WRMuvwl1gI6CJOS0Ow",
-            fullName: "Miloš Ristić",
-            jobTitle: "Software Engineer",
-            description:
-              "Milena Petrović: Miloš’s dedication and hard work have shone brightly on not one but two projects – a testament to his incredible work ethic and skill. His responsiveness is off the charts – quick, helpful, and precise. His commitment to the team is steadfast, and his positive attitude is a breath of fresh air. He brings a level of professionalism that's truly outstanding. Thanks, Miloš, for being such an essential part of the team – your contributions are nothing short of phenomenal!"
-          },
-          {
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/03/DSC007ss23.png",
-            fullName: "Marko Krstanović",
-            jobTitle: "Software Engineer",
-            description:
-              "Nevena Nemeš: Even beyond his core role, Marko consistently crafts tech posts that not only educate but engage, masterfully translating complex tech jargon into relatable content. Hats off to Marko for seamlessly juggling roles and continually lending a much-valued hand to our marketing efforts!"
-          },
-          {
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/06/DSC0s1226.png",
-            fullName: "Kristina Tadić",
-            jobTitle: "Software Engineer",
-            description:
-              "Naq Cyber: Kristina is ace! She consistently delivers exceptional results. Her precision in task execution and fearlessness in seeking clarification or catching overlooked details are remarkable. Her coding skills are top-notch, known for their cleanliness, efficiency, and minimal bugs. Furthermore, her strong grasp of design theory ensures her work not only functions flawlessly but also looks aesthetically pleasing—an uncommon quality in a UI developer. Kristina's confidence in challenging design decisions, combined with her respectful approach, consistently proves invaluable. She is an outstanding asset to the team, and we eagerly anticipate future collaborations with her."
-          }
+          // {
+          //   imgUrl:
+          //     "https://media.licdn.com/dms/image/C4E03AQFmHWKAuQzLNw/profile-displayphoto-shrink_800_800/0/1635939612355?e=1694649600&v=beta&t=smWudPi6uQL58lKTJE1dPR4BRnP6HrA8iav_atD49zQ",
+          //   fullName: "Nenad Rakić",
+          //   jobTitle: "Software Quality Assurance Engineer",
+          //   description:
+          //     "Media Monks: Our colleague Nenad Rakić received excellent praise from our client, MediaMonks. He exemplifies all aspects of his work, consistently delivering excellent results. His exceptional skills and positive attitude make him a perfect teammate."
+          // },
+          // {
+          //   imgUrl:
+          //     "https://media.licdn.com/dms/image/C5603AQFz2Z_8lO-xdA/profile-displayphoto-shrink_800_800/0/1543964045698?e=1694649600&v=beta&t=KKHCmr2Yg_CdS9AsrmOQLJIgwo5ERJNwUrm4LVjalX8",
+          //   fullName: "Ivana Grbić",
+          //   jobTitle: "Office Manager",
+          //   description:
+          //     "Daniela Červeni: Ivana took on the responsibility of organizing the office relocation, and her performance was nothing short of extraordinary. She meticulously oversaw every aspect, ensuring a seamless transition throughout the process. Her tireless dedication and hard work were evident in the successful execution of the relocation."
+          // },
+          // {
+          //   imgUrl:
+          //     "https://media.licdn.com/dms/image/C5603AQEGIfH1cdyVjw/profile-displayphoto-shrink_800_800/0/1567535451360?e=1694649600&v=beta&t=HumMkEvcGhnQwYHgyRUGz1dvlWvVIB-M75AS8l_E1tw",
+          //   fullName: "Edvin Kerekeš ",
+          //   jobTitle: "Software Engineer",
+          //   description:
+          //     "Tanja Maliković: I have the pleasure of acknowledging and appreciating my colleague for his distinct personality and mind-boggling intellect. He has this uncanny knack for approaching work in the most unusual, yet brilliant, ways. His ability to think outside the box and conjure up innovative solutions is truly astounding."
+          // }
         ]}
       />
       <FamilyNews
-        title="Welcoming Juniors at BrightMarbles 👶"
+        title="Congratulations 🎉"
         data={[
+          // {
+          //   img:
+          //     "https://nameitcustomdecor.com.au/cdn/shop/products/IMG_2370.jpg?v=1591945706",
+          //   description: (
+          //     <>
+          //       Join us in extending heartfelt congratulations to our colleague,
+          //       Martin Berger, and his wife on the birth of their baby boy,
+          //       Konstantin. We hope Konstantin inherits his dad' strength and
+          //       resilience. Congratulations to <span> Martin Berger </span>
+          //     </>
+          //   )
+          // },
           {
-            img:
-              "https://i.pinimg.com/originals/78/db/a6/78dba6715bb4b0d42bdd24a70a982e93.jpg",
+            img: "https://lilyandwonder.com/cdn/shop/products/Baby-Girl-Disc.jpg?v=1649946496&width=713",
             description: (
               <>
-                Let’s congratulate our colleague Radivoje and his wife on the
-                arrival of their baby girl, Sofija. May the wisdom that
-                symbolizes her name be a guiding light leading her through every
-                step of life’s adventure. Congratulations to{" "}
-                <span> Radivoje Ostojić! </span>
+                A hearty congratulations to our colleague, Ivan Čekerevac, on
+                the arrival of his baby girl, Dunja! Your new journey into
+                parenthood is a beautiful chapter in your life, and we wish for
+                your days to be filled with love, laughter, and endless joy as
+                you embrace this new adventure. May there be more giggles than
+                diapers, and fewer sleepless nights than expected. Cheers to the
+                joyous (and hopefully well-rested) moments ahead! 😴🍼🎉
+                Congratulations to <span> Ivan Čekerevac </span>
               </>
-            )
+            ),
           },
           {
-            img:
-              "https://lilyandwonder.com/cdn/shop/products/Baby-Girl-Disc.jpg?v=1649946496&width=713",
+            img: "https://hips.hearstapps.com/hmg-prod/images/how-to-grow-your-own-wedding-flowers-1624975513.jpg?crop=0.669xw:1.00xh;0.218xw,0&resize=1200:*",
             description: (
               <>
-                Huge congratulations to our colleague Danilo on becoming a
-                father to a beautiful baby girl! Wishing you and your family all
-                the happiness as you embark on this wonderful journey of
-                parenthood. Enjoy every moment with your precious little one.
-                Congratulations to <span> Danilo Kukrić! </span>
+                Join us in toasting to Jovana Pantić and her partner as they
+                embark on this wonderful journey together. Here's to a future
+                filled with love, shared laughter, and a lifetime of memories
+                worth cherishing. Let's raise our glasses high for their
+                picture-perfect new beginning! 💍🥂 Congratulations to{" "}
+                <span> Jovana Pantić </span>
               </>
-            )
+            ),
           },
-          {
-            img:
-              "https://i.pinimg.com/originals/9d/4a/19/9d4a1990e7359af436f8e1ae5b782212.jpg",
-            description: (
-              <>
-                A big congratulations to our colleague Miloš, who became the
-                father of an adorable baby boy. We wish you and your family a
-                world of joy, laughter, and countless precious moments!
-                Congratulations to <span> Miloš Milić! </span>
-              </>
-            )
-          }
         ]}
       />
       <Birthdays
         employees={[
           {
-            name: "Marko",
+            name: "Bojan",
             imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/03/DSC007ss23.png"
+              "https://brightmarbles.io/wp-content/uploads/2021/03/MDJ_0151-copy.png",
           },
           {
-            name: "Ivo",
+            name: "Jasmina",
             imgUrl:
-              "https://miro.medium.com/v2/resize:fit:640/format:webp/1*4f2hpbaVTgBYnXdzXTu0Lw.jpeg"
+              "https://media.licdn.com/dms/image/C4E03AQGwUx9Tcl7WZQ/profile-displayphoto-shrink_800_800/0/1517727811147?e=1701907200&v=beta&t=rW0QRx_xz1RtTtN705S1ztZ18wcOGN51jmwrNd38fyQ",
           },
           {
-            name: "Milan",
+            name: "Goran",
             imgUrl:
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*XRUdwcOhkIoJL9HQz0JTYw.png"
+              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*yyQHYGkCgq_0yvifJJLGQg.png",
           },
           {
-            name: "Radivoje",
+            name: "Zoran",
             imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/04/DSC003ss22.png"
+              "https://media.licdn.com/dms/image/C5603AQFQum1ahpSNfg/profile-displayphoto-shrink_800_800/0/1517706058352?e=1701907200&v=beta&t=ZpEa3SrQS4NIgrQej6AXq9eaS9hlk3KtYLr7LAR7oIM",
+          },
+          {
+            name: "Imre",
+            imgUrl:
+              "https://brightmarbles.io/wp-content/uploads/2021/06/DSC0s1058.png",
+          },
+          {
+            name: "Dalibor",
+            imgUrl:
+              "https://brightmarbles.io/wp-content/uploads/2022/01/Dalibor.png",
+          },
+          {
+            name: "Jovana",
+            imgUrl:
+              "https://brightmarbles.io/wp-content/uploads/2021/04/DSC01845-copy.png",
+          },
+          {
+            name: "Aleksandra",
+            imgUrl:
+              "https://brightmarbles.io/wp-content/uploads/2022/01/Dalibor.png",
           },
           {
             name: "Nikola",
             imgUrl:
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*WGCwkoPBgJYyc7tNHeQI9w.png"
+              "https://media.licdn.com/dms/image/D5603AQGYL76qm-OowQ/profile-displayphoto-shrink_800_800/0/1682518253085?e=1701907200&v=beta&t=leN7eRnyHOp--aYTkZV4DyUz2PowrWq0yUESeUlzu0w",
           },
           {
-            name: "Nebojša",
+            name: "Sanel",
             imgUrl:
-              "https://media.licdn.com/dms/image/D4D03AQGl158fQv-ing/profile-displayphoto-shrink_200_200/0/1669627524238?e=1698883200&v=beta&t=WLS-2jdsYYf9ueK1p5VlgxUKYg4O6gQnUDRX0CgXGfc"
+              "https://media.licdn.com/dms/image/C4E03AQG4ixGvSdFtjQ/profile-displayphoto-shrink_800_800/0/1652212474361?e=1701907200&v=beta&t=wER2Rr4Q2v8IPgGpgTZWcnsC1cA5IUCxRA7dMkg2eqQ",
           },
           {
-            name: "Marko",
+            name: "Filip",
             imgUrl:
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*okW_pcaPZUGHe4f3fsDAyQ.png"
+              "https://media.licdn.com/dms/image/C5603AQEzLZtKomab3w/profile-displayphoto-shrink_800_800/0/1638973861935?e=1701907200&v=beta&t=qNeRrforM4y6v31yAO8c8VaKePW2e3tpmg9dzwUpj5M",
           },
           {
-            name: "Nenad",
+            name: "Mladen",
             imgUrl:
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*o9GECTwg97TfDtygxr2bGQ.png"
-          }
-          // {
-          //   name: "Nikola",
-          //   imgUrl:
-          //     "https://miro.medium.com/v2/resize:fit:750/format:webp/1*TwOgkDGdhOKJSiPKXhUqbw.png"
-          // },
-          // {
-          //   name: "Vladan",
-          //   imgUrl:
-          //     "https://miro.medium.com/v2/resize:fit:750/format:webp/1*hNgviC6QIwKf4rSHfesVAQ.png"
-          // },
-          // {
-          //   name: "Lazar",
-          //   imgUrl:
-          //     "https://media.licdn.com/dms/image/C5603AQE1wnWij3DeXA/profile-displayphoto-shrink_800_800/0/1625768665853?e=1696464000&v=beta&t=yspv7OZ1p6yqJnO7zBRv9aLVvmE6rPYZkwXoLSmzFiU"
-          // },
-          // {
-          //   name: "Pavle",
-          //   imgUrl:
-          //     "https://media.licdn.com/dms/image/D4D03AQEeRojESA49JA/profile-displayphoto-shrink_800_800/0/1667220488329?e=1696464000&v=beta&t=gOITu3jn23QJOOsOidKL0XuuWoSIGebfsq_BXLu9lno"
-          // },
-          // {
-          //   name: "Bojan",
-          //   imgUrl:
-          //     "https://brightmarbles.io/wp-content/uploads/2022/04/DSC0143s0-copy.png"
-          // },
-          // {
-          //   name: "Marko",
-          //   imgUrl:
-          //     "https://brightmarbles.io/wp-content/uploads/2021/04/DSC002s70.png"
-          // },
-          // {
-          //   name: "Zoran",
-          //   imgUrl:
-          //     "https://media.licdn.com/dms/image/C4E03AQGyKesrI1pONQ/profile-displayphoto-shrink_800_800/0/1578670511770?e=1696464000&v=beta&t=g_74BB14lgiSoCajTfIpe-HfOBgVziV71qv8kNIgVP0"
-          // }
+              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*GUt-n3KoqcV7vALZ1Ron-A.png",
+          },
+          {
+            name: "Luka",
+            imgUrl:
+              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*1hrQyXLxEwHgtmQ9DZNSog.png",
+          },
+          {
+            name: "Stevan",
+            imgUrl:
+              "https://media.licdn.com/dms/image/C5603AQErbU8Pgb3OQQ/profile-displayphoto-shrink_800_800/0/1517589218542?e=1701907200&v=beta&t=gkUQ-gagOgwwq76jtZ6uXvNuiuLiZW2yqhev6EN981M",
+          },
         ]}
       />
       <Contributions />
