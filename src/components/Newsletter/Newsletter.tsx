@@ -123,7 +123,7 @@ export const Newsletter = () => {
           {
             title: "Raven",
             description:
-              "We are pleased to spotlight the exceptional performance of our team members, Imre Čileg and Goran Simić, who have been diligently serving one of our latest cryptocurrency clients, Anycoin. Their commitment and professional expertise have greatly contributed to Anycoin's excellent performance. Their efforts have not only met but exceeded client expectations, leading to high praise and appreciation from Anycoin. We are confident that their continued dedication will further enhance our partnership with Anycoin and contribute to sustained success.",
+              "The planned objectives for June have been accomplished as per schedule, marking a successful month for our team. Our team is currently in the active development phase, focusing on enhancing workspaces and meeting the needs of individuals with decreased capacity. This ensures the project remains on track, aligning with the required standards and specifications. We continue to forge ahead, maintaining our momentum and commitment to building a product that exceeds expectations.",
           },
           {
             title: "Security Operations projects",
