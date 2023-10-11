@@ -123,7 +123,7 @@ export const Newsletter = () => {
           {
             title: "Raven",
             description:
-              "The planned objectives for June have been accomplished as per schedule, marking a successful month for our team. Our team is currently in the active development phase, focusing on enhancing workspaces and meeting the needs of individuals with decreased capacity. This ensures the project remains on track, aligning with the required standards and specifications. We continue to forge ahead, maintaining our momentum and commitment to building a product that exceeds expectations.",
+              "Over the past month, our team has made significant strides in defining and expanding the existing core features of the application. While maintaining stability as our top priority, we've also made substantial progress in enhancing features that have a direct impact on user engagement, all in line with our long-term objectives.",
           },
           {
             title: "Security Operations projects",
