@@ -78,8 +78,9 @@ export const Newsletter = () => {
               "The project is in its final phase; the deadline is mid-December and, so far, it looks challenging but feasible.",
           },
           {
-            title: "NAQ",
-            description: "Došli Daniel i Kris na projekat.",
+            title: "NAQ Cyber",
+            description:
+              "The Naq Cyber team is actively involved in transitioning to a new application, with significant progress already achieved. Notably, Daniel and Kristina have rejoined the team, enhancing our capabilities and contributing to the project's success.",
           },
           {
             title: "Penetration Testing projects",
@@ -88,11 +89,11 @@ export const Newsletter = () => {
           },
         ]}
         rightParagraphs={[
-          {
-            title: "Penetration Testing projects",
-            description:
-              "We welcomed two new members to our PenTesting team. The bandwidth and engagement were increased to over 20 projects per month on average, and we are now experiencing a constant rise in demand.",
-          },
+          // {
+          //   title: "Penetration Testing projects",
+          //   description:
+          //     "We welcomed two new members to our PenTesting team. The bandwidth and engagement were increased to over 20 projects per month on average, and we are now experiencing a constant rise in demand."
+          // },
           {
             title: "Raven",
             description:
@@ -192,7 +193,7 @@ export const Newsletter = () => {
         bgColor="white"
         company={Company.BRIGHTLY}
         title="Teodora Pantelić Steps into Office Manager Role in Belgrade Office"
-        description="Join us in welcoming Teodora Pantelić as our new Office Manager in Belgrade! Teodora steps into the role previously held by Tijana Petković, and we're excited to have her bring fresh perspectives and energy to the BrightMarbles team. Here's to a successful journey together!"
+        description="Join us in welcoming Teodora Pantelić as our new Office Manager in Belgrade! Teodora steps into the role previously held by Tijana Petković, and we're excited to have her bring fresh perspectives and energy to the Brightly team. Here's to a successful journey together!"
       />
       {/* <QuickUpdate
         bgColor="black"
@@ -239,7 +240,7 @@ export const Newsletter = () => {
             ),
           },
           {
-            img: "https://media.licdn.com/dms/image/D4D22AQG6YORbWsWLpA/feedshare-shrink_2048_1536/0/1699015134239?e=1702512000&v=beta&t=USjriwVKO6FEMhmhkg3jkw21lPa8e3AD-Ex4nu2NTAM",
+            img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*R1xLQhdejclB7p1nQe8Z_A.jpeg",
             title:
               "Rust in Pieces: Benefits of the Ownership System (Nenad Stojković)",
             description: (
@@ -388,6 +389,7 @@ export const Newsletter = () => {
             imgUrl:
               "https://miro.medium.com/v2/resize:fit:828/format:webp/1*RgwyLUqaS6CYKrGixjGJ0Q.png",
             fullName: "Design Team",
+            // jobTitle: "Cybersecurity Project Manager",
             description:
               "Nevena Nemeš: It's time to highlight the remarkable contributions of some of our most dedicated Mibsters, our Design team! Goran Breberina exemplifies consistency and dependability, setting a high standard for our team with his exceptional results and willingness to tackle new challenges. Marko Vladušić consistently wows our clients with his innovative approach and keen awareness of the latest trends. His creativity makes him an invaluable team asset. Zlata Solarov's remarkable effort in creating our Halloween video in a short time frame deserves special mention. Her commitment has been truly commendable.",
           },
@@ -426,7 +428,7 @@ export const Newsletter = () => {
           {
             imgUrl:
               "https://media.licdn.com/dms/image/C4E03AQHoCRe-kFGFqg/profile-displayphoto-shrink_800_800/0/1644248646507?e=1705536000&v=beta&t=sUWo1QrtwFAUtLJv4WiJDgUksFjhVl9Dlc_l27TojOc",
-            fullName: "Katarina Palvov",
+            fullName: "Katarina Pavlov",
             jobTitle: "HR",
             description:
               "UN1QUELY MNGMT: Kudos to Nina! As one of the early team members at UN1QUELY, Nina has played a valuable part in shaping our culture and contributes to enhancing our overall well-being in our daily work. Her positive mindset and eagerness to tackle any task and solve every problem have been a constant source of guidance. We truly appreciate and value your contributions, Nina!",
