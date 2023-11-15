@@ -1,6 +1,6 @@
 export type Colleague = {
   imgUrl?: string,
   fullName: string;
-  jobTitle: string;
+  jobTitle?: string;
   description: string;
 };
