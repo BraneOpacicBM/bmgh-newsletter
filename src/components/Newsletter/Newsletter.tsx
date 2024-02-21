@@ -279,17 +279,17 @@ export const Newsletter = () => {
     <OpenPositions
       jobPostings={[
         {
-          title: "Node.js Engineer (BrightMatbles, UN1QUELY, Brightly)",
+          title: "Node.js Engineer (BrightMarbles, UN1QUELY, Brightly)",
           postingUrl:
             "https://bmgh.zohorecruit.eu/jobs/Careers/36808000000430020/Experienced-Software-Engineer---Node-js?source=CareerSite",
         },
         {
-          title: "React Engineer (BrightMatbles, UN1QUELY, Brightly)",
+          title: "React Engineer (BrightMarbles, UN1QUELY, Brightly)",
           postingUrl:
             "https://bmgh.zohorecruit.eu/jobs/Careers/36808000001590457/Experienced-Frontend-Engineer-React-?source=CareerSite",
         },
         {
-          title: ".NET Engineer (BrightMatbles, UN1QUELY, Brightly)",
+          title: ".NET Engineer (BrightMarbles, UN1QUELY, Brightly)",
           postingUrl:
             "https://bmgh.zohorecruit.eu/jobs/Careers/36808000000423157/Experienced-Software-Engineer---NET?source=CareerSite",
         },
