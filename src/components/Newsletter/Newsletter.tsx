@@ -7,15 +7,15 @@ import NewsAndEvents from "../NewsAndEvents/NewsAndEvents";
 import OpenPositions from "../OpenPositions/OpenPositions";
 import ThreeColorDivider from "../ThreeColorDivider/ThreeColorDivider";
 import Colleagues from "../Colleagues/Colleagues";
+import FamilyNews from "../FamilyNews/FamilyNews";
 import Birthdays from "../Birthdays/Birthdays";
 import Contributions from "../Contribution/Contribution";
 import useVerify from "../../hooks/useVerify";
-import FamilyNews from "../FamilyNews/FamilyNews";
 
 export const Newsletter = () => {
-  const { loading, isVerified } = useVerify()
+  const { loading, isVerified } = useVerify();
 
-  if (loading || !isVerified) return null
+  if (loading || !isVerified) return null;
 
   return (<div className={styles.newsletter_body}>
     <Header

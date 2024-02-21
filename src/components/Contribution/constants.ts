@@ -25,11 +25,11 @@ export const CONTRIBUTION_PLATFORMS_MAPPER: Record<Company, ContributionPlatform
     HelloWorld: "https://www.helloworld.rs/kompanija/BrightMarbles/1219",
   },
   [Company.BRIGHT_MARBLES_MACEDONIA]: {
-    Joberty: "https://www.joberty.mk/kompanija/14049/brightmarbles-macedonia/za-kompanijata",
+    Joberty: "https://www.joberty.com/mk/it-company/14049/brightmarbles-macedonia/overview",
     Google: "https://www.google.com/maps/place//data=!4m3!3m2!1s0x135415152e625935:0xd18cb073c6643e11!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2",
   },
   [Company.BRIGHT_MARBLES_NETHERLANDS]: {
     Google: "https://www.google.com/maps/place/BrightMarbles+Netherlands+BV/@51.9234551,4.4691239,17z/data=!3m1!4b1!4m6!3m5!1s0x47c43530968ed01f:0x8b523714568d969b!8m2!3d51.9234551!4d4.4691239!16s%2Fg%2F11ss1grfzf?&entry=ttu",
-    Glassdoor: "https://www.G.comdOverview/Working-at-BrightMarbles-EI_IE2984487.11,24.htm",
+    Glassdoor: "https://www.glassdoor.com/Overview/Working-at-BrightMarbles-EI_IE2984487.11,24.htm",
   },
 };
