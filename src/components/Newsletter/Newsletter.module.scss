@@ -11,6 +11,26 @@
     margin: auto;
   }
   @media (min-width: 600px) {
-    padding: 0 40px 20px 40px
+    padding: 0 40px 20px 40px;
   }
+}
+
+.heroDescription {
+  margin: 20px;
+}
+
+.heroImage {
+  margin: 20px;
+}
+
+.image {
+  width: 100%;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3;
 }
