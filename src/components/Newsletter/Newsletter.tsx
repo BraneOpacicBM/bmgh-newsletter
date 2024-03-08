@@ -796,7 +796,7 @@ export const Newsletter = () => {
                 pleasant businesswoman; you're a source of inspiration, and I'm
                 confident that even greater successes await you. Happy 8th of
                 March and keep shining bright!
-                <span> Milica Stojaković</span>
+                <span> Zlata Solarov</span>
               </>
             ),
           },
