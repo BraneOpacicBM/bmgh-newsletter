@@ -594,16 +594,15 @@ export const Newsletter = () => {
             img: "https://brightmarbles.io/wp-content/uploads/2020/09/DSC00sss219.png",
             description: (
               <>
-                <span> Daniela Červeni</span>
-                Dear Dani, For four years now, we've navigated the waters of HR
-                together, and this is the perfect opportunity for me to express
-                my gratitude for every bit of help, support, and kind word
-                you've offered. Thank you for standing by my side from the very
-                beginning and for helping me grow and thrive. We've encountered
-                many beautiful moments, as well as some challenging ones, but
-                thanks to your patience and expertise, we've overcome them all.
-                It's a great honor to work with you, and, beyond that, it's
-                incredibly enjoyable too!
+                <span> Daniela Červeni</span> Dear Dani, For four years now,
+                we've navigated the waters of HR together, and this is the
+                perfect opportunity for me to express my gratitude for every bit
+                of help, support, and kind word you've offered. Thank you for
+                standing by my side from the very beginning and for helping me
+                grow and thrive. We've encountered many beautiful moments, as
+                well as some challenging ones, but thanks to your patience and
+                expertise, we've overcome them all. It's a great honor to work
+                with you, and, beyond that, it's incredibly enjoyable too!
                 <span> Milica Stanković </span>
               </>
             ),
@@ -778,9 +777,13 @@ export const Newsletter = () => {
             img: "https://brightmarbles.io/wp-content/uploads/2021/06/DSC0ss1161.png",
             description: (
               <>
-                <span> Milica Baturan </span>Happy International Women's Day,
-                Milica! Thank you so much for being part of our team and
-                expertly finding all the bugs.
+                <span> Milica Baturan </span> Happy International Women's Day!
+                To an extraordinary colleague and friend, your exceptional work,
+                attention to detail, and organizational prowess make every team
+                shine. And on top of it all, congratulations on becoming a
+                wonderful mother to a beautiful girl. Wishing you continued
+                success and happiness in all aspects of life. Cheers to you on
+                this special day!
               </>
             ),
           },
