@@ -11,6 +11,7 @@ import FamilyNews from "../FamilyNews/FamilyNews";
 import Birthdays from "../Birthdays/Birthdays";
 import Contributions from "../Contribution/Contribution";
 import useVerify from "../../hooks/useVerify";
+import HeroImage from "../HeroImage/HeroImage";
 
 export const Newsletter = () => {
   const { loading, isVerified } = useVerify();
@@ -23,25 +24,29 @@ export const Newsletter = () => {
         title="February Company Update"
         leftParagraphs={[
           {
-            title: "Bench Strength:",
+            // title: "Bench Strength:",
+            description: "Dear BrightMarbles team,",
+          },
+          {
+            // title: "Bench Strength:",
             description:
               "We currently have 15 employees on the bench, with the majority actively involved in existing projects, providing support to colleagues and ensuring client satisfaction remains high. W When we started sharing company updates through our newsletter in June last year, we had 33 employees on the bench. Over the last 9 months, we've managed to reduce this number by more than half. As we continue to secure new projects, we're also beginning to expand our team, anticipating the addition of 4 new employees by mid-April. One of them, Igor Trifunović, has already come on board.",
           },
         ]}
         rightParagraphs={[
           {
-            title: "Profit:",
+            // title: "Profit:",
             description:
               "Despite the traditionally weak performance in January, our profit in February increased by 33%. While this is encouraging in terms of growth, the total profit isn't sufficient for operations to be comfortable without a careful watch over our expenditure.",
           },
           {
-            title: "Cash Flow:",
+            // title: "Profit:",
             description:
               "The situation with cash flow mirrors that of our profit – despite seeing an improvement from January, it's crucial that we keep a close eye on our expenditures to maintain a healthy financial status.",
           },
         ]}
       />
-      <ProjectClientSection
+      {/* <ProjectClientSection
         leftParagraphs={[
           {
             title: "Adriaan",
@@ -64,12 +69,12 @@ export const Newsletter = () => {
               "The development of the application is complete, and it has been tested. Currently, it is undergoing client review, and once the necessary adjustments are made, the application will be released. This marks the conclusion of our collaboration with Bielik, which we expect to be by the end of March.",
           },
           {
-            title: "Carna",
+            title: "Anyone",
             description:
               "Starting next week, the second screening project for the Cameroon population on chronic kidney disease will begin. This pilot scientific project aims to serve as a Proof of Concept for the Ministry of Health in Cameroon, encouraging them to adopt and include in their budget the screening of the entire population over the next 10 years. This holds significant importance, given Cameroon's underserved population, where a considerable number of individuals lack adequate access to healthcare. Congratulations to the entire team for their efforts in this endeavor!",
           },
           {
-            title: "Concorde Health",
+            title: "Costa Coffee",
             description:
               "The MVP phase of the project is wrapping up, and the client will begin sales soon. In relation to this, we are pausing our collaboration with the client as active development halts.",
           },
@@ -100,6 +105,8 @@ export const Newsletter = () => {
             description:
               "In 2024, MijnDomein is expanding its team by welcoming two new members from BrightMarbles. Kristina Tadic is joining the front-end-oriented team to support MijnDomein, while Vladimir Djurdjevic will contribute his expertise in a more backend-oriented capacity. Over the past 2-3 months, alongside our daily tasks, we collaborated with MijnDomein's development department to initiate some changes in our working methods. Recognizing our capabilities, our team members have selected us as candidates to lead specific features, granting us the responsibility and ownership of the role of feature lead.",
           },
+        ]}
+        rightParagraphs={[
           {
             title: "MijnDomein",
             description:
@@ -230,10 +237,10 @@ export const Newsletter = () => {
               Description can be in form of text(string) or you can pass html as
               this example show 💙
             </div> */}
-          </div>
+    </div>
         }
-      />{" "}
-      {/* <QuickUpdate
+/>{" "}
+{/* <QuickUpdate
         bgColor="blue"
         company={Company.BRIGHT_MARBLES}
         title="Lorem ipsum dolor sit amet consectetur adipisicing"
@@ -433,7 +440,163 @@ export const Newsletter = () => {
           },
         ]}
       />
-      <OpenPositions
+      <HeroImage
+        bgColor="black"
+        title="Internal celebration of Women's Day and Women's Month "
+      >
+        <div className={styles.heroContainer}>
+          <div className={styles.heroDescription}>
+            <p>
+              March is the month when we talk about women. March is the month
+              when we celebrate the achievements of women in the fields of
+              science, culture, politics, and economics, when we discuss
+              equality and women's rights. Through our internal event, we aim to
+              connect with each other and have fun discussing topics that are
+              important to us. We want to listen to every participant and take
+              active steps to improve the situation within our company and the
+              industry.
+            </p>
+          </div>
+          <div className={styles.heroImage}>
+            <img
+              className={styles.image}
+              src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*ef_XIMbzQc6algFHNO6xBQ.png"
+              alt="Describe this"
+            />
+          </div>
+        </div>
+      </HeroImage>
+      <HeroImage bgColor="white" title="Cybersecurity for Women">
+        <div className={styles.heroContainer}>
+          <div className={styles.heroDescription}>
+            <p>
+              As you can see from our numbers, women are underrepresented in the
+              field of cybersecurity. Through a lecture aimed at girls at
+              technical faculties, we aim to introduce them to this field and
+              provide them with a recipe on how to enter it.
+            </p>
+          </div>
+          <div className={styles.heroImage}>
+            <img
+              className={styles.image}
+              src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*LYgvRDWNY6cobtiXoBzH6Q.jpeg"
+              alt="Describe this"
+            />
+          </div>
+        </div>
+      </HeroImage>
+      <HeroImage bgColor="blue" title="How to Start a Career in QA">
+        <div className={styles.heroContainer}>
+          <div className={styles.heroDescription}>
+            <p>
+              An online lecture for women and others interested in starting a
+              career in the field of QA. We will address the role of QA,
+              necessary qualifications, skills, and knowledge, and provide
+              guidance on where to start learning.
+            </p>
+          </div>
+          <div className={styles.heroImage}>
+            <img
+              className={styles.image}
+              src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*XhAgTjfZI4DrVAiV1rzteg.png"
+              alt="Describe this"
+            />
+          </div>
+        </div>
+      </HeroImage>
+      <HeroImage bgColor="black" title="Coding in Scratch for Girls">
+        <div className={styles.heroContainer}>
+          <div className={styles.heroDescription}>
+            <p>
+              This is not an initiative in March, but it builds on the Women's
+              Month. In June, when the school year ends, we plan to repeat our
+              last year's workshop for girls in Scratch, and help them get
+              acquainted with IT and develop an interest in this field. This
+              way, we would like to influence, at least in our microcosm, the
+              number of women in the industry.
+            </p>
+          </div>
+          <div className={styles.heroImage}>
+            <img
+              className={styles.image}
+              src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*gzZajURdY-PsRFWmissMpA.jpeg"
+              alt="Describe this"
+            />
+          </div>
+        </div>
+      </HeroImage>
+{/* <QuickUpdate
+        company={Company.BRIGHT_MARBLES}
+        title="Reflecting and Planning for the Future"
+        description={
+          <div>
+            <div>
+              January marks the end of the holiday season and the festive
+              atmosphere, a time for reflection and planning. At our Novi Sad
+              office, we gathered for a Company meeting, looking back at the
+              milestones we achieved last year and setting plans for the new
+              one.
+            </div>
+            <div>
+              Also, we missed our December newsletter, so let’s take a moment to
+              appreciate the exceptional work of Dunja Ibročić, Biljana Kovač,
+              Darko Kovač, and Svetlana Kosić. Their translation of the
+              Evidence-Based Management Guide for Scrum.org into Serbian is
+              truly a commendable achievement!
+            </div>
+          </div>
+        }
+      />
+      <QuickUpdate
+        company={Company.BRIGHTLY}
+        bgColor="white"
+        title="Company Meeting Recap and Strengthening Swiss Client Partnerships"
+        description="Many exciting things are currently happening at Brightly. Like other offices, we held a company meeting where we reflected on the past year and the events that defined it, and we also shared our plans for 2024. 
+
+    Additionally, there are developments in our collaboration with Swiss clients. Since the last newsletter, Nenad Jović has traveled to Switzerland twice with the aim of getting to know our clients better."
+      />
+      <QuickUpdate
+        bgColor="black"
+        company={Company.UN1QUELY}
+        title="Expanding Horizons in Cybersecurity "
+        description={
+          <div>
+            <div>
+              Despite the market's turbulence, UN1QUELY managed to grow! Our
+              Cybersecurity team has expanded by 11 new members, and we recently
+              held a kick-off company meeting to outline our plans for the
+              upcoming year.
+            </div>
+            <div>
+              In exciting news, we've launched the UN1QUELY Cybersecurity
+              Academy to foster knowledge sharing and train new team members. A
+              big thanks to Strahinja Vuksanović and Luka Bojović for creating
+              educational cybersecurity videos. Furthermore, we've initiated
+              cybersecurity competitions for high school students – stay tuned
+              for updates!
+            </div>
+          </div>
+        }
+      />{" "} */}
+{/* <QuickUpdate
+    bgColor="blue"
+    company={Company.BRIGHT_MARBLES}
+    title="Lorem ipsum dolor sit amet consectetur adipisicing"
+    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+  /> */}
+{/* <QuickUpdate
+        bgColor="white"
+        company={Company.BRIGHT_MARBLES_MACEDONIA}
+        title="Welcoming New Talent"
+        description="We're thrilled to start the new year with some fresh energy in our team! A warm welcome to Hristijan Gjorgjioski, who is joining our Macedonia office as the youngest member."
+      /> */}
+{/* <QuickUpdate
+    bgColor="black"
+    company={Company.BRIGHT_MARBLES_NETHERLANDS}
+    title="Lorem ipsum dolor sit amet consectetur adipisicing"
+    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+  /> */}
+{/* <OpenPositions
         jobPostings={[
           {
             title: "Software Engineer - Node.js (BMGH)",
@@ -451,8 +614,8 @@ export const Newsletter = () => {
               "https://bmgh.zohorecruit.eu/jobs/Careers/36808000000423157/Experienced-Software-Engineer---NET?source=CareerSite",
           },
         ]}
-      />
-      <ThreeColorDivider />
+      /> */}
+{/* <ThreeColorDivider />
       <Colleagues
         colleagues={[
           {
@@ -504,37 +667,37 @@ export const Newsletter = () => {
               "Lazar Vukašinović: A big shoutout to Ana for her exceptional adaptability when it comes to learning new technologies needed for a pen testing project. Ana is very proactive in taking on new responsibilities, which shows her great desire to learn and progress. I must also commend Ana for her remarkable proficiency in English; it is phenomenal! Kudos to Ana for her outstanding contributions!",
           },
         ]}
-      />
-      <FamilyNews
-        title="Celebrations 🎉"
-        data={[
-          {
-            img: "https://media.licdn.com/dms/image/C4E03AQExce7v2grTIg/profile-displayphoto-shrink_800_800/0/1603114986803?e=1716422400&v=beta&t=t27JkzaJpsgqpcHtogOU7HD44C-jTpma0mpieYjZ3Xc",
-            description: (
-              <>
-                BrightMarbles Novi Sad has grown by one familiar - new member,
-                Igor Trifunović, a software engineer with approximately 12 years
-                of experience. He brings 10 years of experience with Java and
-                Android, and over 8 years of experience with .NET. Welcome,{" "}
-                <span> Igor! </span>
-              </>
-            ),
-          },
-          {
-            img: "https://media.licdn.com/dms/image/D4D03AQFCPh8z38Cp9g/profile-displayphoto-shrink_800_800/0/1694703536398?e=1716422400&v=beta&t=hd__Pvz6nKj-PhhNSYSDm7jGGGM5zXHQraU3tdnPpAA",
-            description: (
-              <>
-                Nikola Donevski has joined our Macedonian office. With 3 years
-                of experience as a full-stack engineer, he brings a wealth of
-                knowledge to the table. Specializing in React, Redux, and more,
-                he's ready to dive into new challenges as our Intermediate
-                Software Engineer. Welcome <span> Nikola! </span>
-              </>
-            ),
-          },
-        ]}
-      />
-      <Birthdays
+      /> */}
+<FamilyNews
+  title="Celebrations 🎉"
+  data={[
+    {
+      img: "https://media.licdn.com/dms/image/C4E03AQExce7v2grTIg/profile-displayphoto-shrink_800_800/0/1603114986803?e=1716422400&v=beta&t=t27JkzaJpsgqpcHtogOU7HD44C-jTpma0mpieYjZ3Xc",
+      description: (
+        <>
+          BrightMarbles Novi Sad has grown by one familiar - new member,
+          Igor Trifunović, a software engineer with approximately 12 years
+          of experience. He brings 10 years of experience with Java and
+          Android, and over 8 years of experience with .NET. Welcome,{" "}
+          <span> Igor! </span>
+        </>
+      ),
+    },
+    {
+      img: "https://media.licdn.com/dms/image/D4D03AQFCPh8z38Cp9g/profile-displayphoto-shrink_800_800/0/1694703536398?e=1716422400&v=beta&t=hd__Pvz6nKj-PhhNSYSDm7jGGGM5zXHQraU3tdnPpAA",
+      description: (
+        <>
+          Nikola Donevski has joined our Macedonian office. With 3 years
+          of experience as a full-stack engineer, he brings a wealth of
+          knowledge to the table. Specializing in React, Redux, and more,
+          he's ready to dive into new challenges as our Intermediate
+          Software Engineer. Welcome <span> Nikola! </span>
+        </>
+      ),
+    },
+  ]}
+/>
+{/* <Birthdays
         employees={[
           {
             name: "Miloš",
@@ -582,9 +745,9 @@ export const Newsletter = () => {
               "https://miro.medium.com/v2/resize:fit:750/format:webp/1*V-Jf29VS5vhiUUR3EcCplg.png",
           },
         ]}
-      />
+      /> */}
       <Contributions />
       <ThreeColorDivider hideWhite />
-    </div>
+    </div >
   );
 };

@@ -1,0 +1,74 @@
+.wrapper_blue {
+    background-color: #0362fd;
+    padding: 4rem 2rem;
+    color: white;
+    .social_media,
+    .company_name {
+      color: white;
+      background-color: rgba(221, 230, 244, 0.2);
+    }
+  }
+  
+  .wrapper_black {
+    background-color: black;
+    padding: 4rem 2rem;
+    color: white;
+    .social_media,
+    .company_name {
+      color: white;
+      background-color: rgba(221, 230, 244, 0.2);
+    }
+  }
+  
+  .wrapper_white {
+    background-color: #f3f3f3;
+    padding: 4rem 2rem;
+    color: black;
+    .social_media,
+    .company_name {
+      background-color: rgba(221, 230, 244, .9);
+    }
+  }
+  
+  .description > div {
+    margin-bottom: 1rem;
+  }
+  
+  h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .company_name {
+    margin: auto;
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+  }
+  
+  .main_section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.6;
+  }
+  
+  .social_media {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 4rem;
+    max-width: 400px;
+    padding: 1.2rem 1rem;
+    line-height: .8rem;
+    border-radius: 4px;
+    font-size: 12px;
+    div {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+  }
+  
