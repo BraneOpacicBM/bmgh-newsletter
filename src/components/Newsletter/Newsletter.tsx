@@ -102,11 +102,6 @@ export const Newsletter = () => {
               "In 2024, MijnDomein is expanding its team by welcoming two new members from BrightMarbles. Kristina Tadic is joining the front-end-oriented team to support MijnDomein, while Vladimir Djurdjevic will contribute his expertise in a more backend-oriented capacity. Over the past 2-3 months, alongside our daily tasks, we collaborated with MijnDomein's development department to initiate some changes in our working methods. Recognizing our capabilities, our team members have selected us as candidates to lead specific features, granting us the responsibility and ownership of the role of feature lead.",
           },
           {
-            title: "MijnDomein",
-            description:
-              "The MijnDomein team is currently participating in an on-site gathering that spans an entire week. This is an exciting opportunity for the team to collaborate, learn, and grow together. One of the key highlights of this visit is a special DevOps assembly that we've organized. This event brings together colleagues from the development, operations, and various other departments, encouraging interdisciplinary dialogue and collaboration. This unique gathering is not just about work – it also includes team-building activities designed to foster camaraderie, boost morale, and strengthen our collective spirit.",
-          },
-          {
             title: "MTV SysAdmin",
             description:
               "The project is finished, and we’ve performed a handover to the client.",
@@ -130,11 +125,6 @@ export const Newsletter = () => {
             title: "Security Operations projects",
             description:
               "A lot of interest has been generated for big prospects in Germany and Switzerland for our SecOps services, we are currently negotiating multiple deals and expect expansion of this team soon.",
-          },
-          {
-            title: "Toogethr Parking & Drive",
-            description:
-              "The Toogethr team is busy with new features and has a lot on their plate. They are planning to develop a mobile application, as well as Toogethr in a Box, which aims to provide a simplified version of integration with parking systems. These are certainly topics we will inform you about in the next newsletter. The primary focus in the near future is on creating a payment system for parking, on which the team is heavily engaged. ",
           },
           {
             title: "Toogethr Parking & Drive",
@@ -228,30 +218,30 @@ export const Newsletter = () => {
               Software Engineer. A hearty welcome aboard, Nikola! 🚀
             </div>
             {/* <div>
-                Description can be in form of text(string) or you can pass html as
-                this example show 💙
-              </div> */}
+              Description can be in form of text(string) or you can pass html as
+              this example show 💙
+            </div> */}
           </div>
         }
       />{" "}
       {/* <QuickUpdate
-          bgColor="blue"
-          company={Company.BRIGHT_MARBLES}
-          title="Lorem ipsum dolor sit amet consectetur adipisicing"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-        />
-        <QuickUpdate
-          bgColor="white"
-          company={Company.BRIGHT_MARBLES_MACEDONIA}
-          title="Lorem ipsum dolor sit amet consectetur adipisicing"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-        />
-        <QuickUpdate
-          bgColor="black"
-          company={Company.BRIGHT_MARBLES_NETHERLANDS}
-          title="Lorem ipsum dolor sit amet consectetur adipisicing"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-        /> */}
+        bgColor="blue"
+        company={Company.BRIGHT_MARBLES}
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+      />
+      <QuickUpdate
+        bgColor="white"
+        company={Company.BRIGHT_MARBLES_MACEDONIA}
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+      />
+      <QuickUpdate
+        bgColor="black"
+        company={Company.BRIGHT_MARBLES_NETHERLANDS}
+        title="Lorem ipsum dolor sit amet consectetur adipisicing"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
+      /> */}
       <NewsAndEvents
         data={[
           {
@@ -269,8 +259,8 @@ export const Newsletter = () => {
                 home a trophy. Talk about some sweet family perks! 😄 Just
                 another fun day at work!
                 {/* <a target="_blank" href="">
-                    Click here to read more
-                  </a> */}
+                  Click here to read more
+                </a> */}
               </>
             ),
           },
@@ -288,11 +278,11 @@ export const Newsletter = () => {
                 Infrastructure in Response to Covid-19" project, showcases our
                 dedication to promoting digital safety.
                 {/* <a
-                    target="_blank"
-                    href="https://brightmarbles.io/blog/agile-chronicles-chapter1/"
-                  >
-                    Click here to read more
-                  </a> */}
+                  target="_blank"
+                  href="https://brightmarbles.io/blog/agile-chronicles-chapter1/"
+                >
+                  Click here to read more
+                </a> */}
               </>
             ),
           },
@@ -312,11 +302,11 @@ export const Newsletter = () => {
                 sparked excitement with plans for Kragujevac, igniting
                 cross-sector collaboration.
                 {/* <a
-                    target="_blank"
-                    href="https://medium.com/@un1quely/the-beauty-of-testing-from-home-to-the-open-road-846c9bc11477"
-                  >
-                    Click here to read more
-                  </a> */}
+                  target="_blank"
+                  href="https://medium.com/@un1quely/the-beauty-of-testing-from-home-to-the-open-road-846c9bc11477"
+                >
+                  Click here to read more
+                </a> */}
               </>
             ),
           },
