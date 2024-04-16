@@ -330,7 +330,7 @@ export const Newsletter = () => {
                 jobPostings={[
                     {
                         title:
-                            "Experienced Frontend Engineer (.NET) - Medior or Senior level (BRIGHTMARBLES & UN1QUELY)",
+                            "Experienced Software Engineer (.NET) - Medior or Senior level (BRIGHTMARBLES & UN1QUELY)",
                         postingUrl:
                             "https://bmgh.zohorecruit.eu/jobs/Careers/36808000000423157/Experienced-Software-Engineer---NET?source=CareerSite",
                     },
