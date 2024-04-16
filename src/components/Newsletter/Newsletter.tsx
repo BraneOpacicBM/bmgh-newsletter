@@ -11,571 +11,505 @@ import FamilyNews from "../FamilyNews/FamilyNews";
 import Birthdays from "../Birthdays/Birthdays";
 import Contributions from "../Contribution/Contribution";
 import useVerify from "../../hooks/useVerify";
-import HeroImage from "../HeroImage/HeroImage";
+// import HeroImage from "../HeroImage/HeroImage";
 
 export const Newsletter = () => {
-  const { loading, isVerified } = useVerify();
+    const { loading, isVerified } = useVerify();
 
-  if (loading || !isVerified) return null;
+    if (loading || !isVerified) return null;
 
-  return (
-    <div className={styles.newsletter_body}>
-      <Header
-        title="February Company Update"
-        leftParagraphs={[
-          {
-            title: "Bench Strength:",
-            description:
-              "We currently have 15 employees on the bench, with the majority actively involved in existing projects, providing support to colleagues and ensuring client satisfaction remains high. W When we started sharing company updates through our newsletter in June last year, we had 33 employees on the bench. Over the last 9 months, we've managed to reduce this number by more than half. As we continue to secure new projects, we're also beginning to expand our team, anticipating the addition of 4 new employees by mid-April. One of them, Igor Trifunović, has already come on board.",
-          },
-        ]}
-        rightParagraphs={[
-          {
-            title: "Profit:",
-            description:
-              "Despite the traditionally weak performance in January, our profit in February increased by 33%. While this is encouraging in terms of growth, the total profit isn't sufficient for operations to be comfortable without a careful watch over our expenditure.",
-          },
-          {
-            title: "Cash Flow:",
-            description:
-              "The situation with cash flow mirrors that of our profit – despite seeing an improvement from January, it's crucial that we keep a close eye on our expenditures to maintain a healthy financial status.",
-          },
-        ]}
-      />
-      <ProjectClientSection
-        leftParagraphs={[
-          {
-            title: "Adriaan",
-            description:
-              "As announced in the previous newsletter, we have resumed our collaboration with Adriaan on the second phase of developing a web application for the cultivation and use of marijuana. Additionally, work is underway on redesigning the mobile app. The team has been formed, and the design phase is nearly complete. The project will soon move on to the development phase.",
-          },
-          {
-            title: "Anycoin",
-            description:
-              "The team is starting work on the new application, and colleague Goran Simić is part of the team for the application - before starting work, it is necessary to prepare the API that the application will use. Bitcoin is again at a new record-high price.",
-          },
-          {
-            title: "Anyone",
-            description:
-              "In the last period, our team expanded and Nenad Stojković joined the team. We focused on fine-tuning our product objectives. This month, we've maintained the same momentum in our project work.",
-          },
-          {
-            title: "Bielik",
-            description:
-              "The development of the application is complete, and it has been tested. Currently, it is undergoing client review, and once the necessary adjustments are made, the application will be released. This marks the conclusion of our collaboration with Bielik, which we expect to be by the end of March.",
-          },
-          {
-            title: "Carna",
-            description:
-              "Starting next week, the second screening project for the Cameroon population on chronic kidney disease will begin. This pilot scientific project aims to serve as a Proof of Concept for the Ministry of Health in Cameroon, encouraging them to adopt and include in their budget the screening of the entire population over the next 10 years. This holds significant importance, given Cameroon's underserved population, where a considerable number of individuals lack adequate access to healthcare. Congratulations to the entire team for their efforts in this endeavor!",
-          },
-          {
-            title: "Concorde Health",
-            description:
-              "The MVP phase of the project is wrapping up, and the client will begin sales soon. In relation to this, we are pausing our collaboration with the client as active development halts.",
-          },
-          {
-            title: "Costa Coffee",
-            description:
-              "Approaching the Q2 quarterly planning, the team is in the final stages of completing the tasks associated with their planned digital transformation, which will include numerous changes to the existing application.",
-          },
-          {
-            title: "Crayon",
-            description:
-              "We've received two new short-term DevOps projects through our partner, Crayon: Project Zepter: This involves redesigning their AWS infrastructure and transitioning from vertical to horizontal scaling logic. Rather than purchasing costly machines to address performance issues, our goal is to implement ALB and tailor the system usage accordingly. The project is estimated to last 1.5 months. Upon successful completion, there's potential for a subsequent long-term project. Project OTP: This is a one-month endeavor focused on rectifying issues in their Terraform code and integrating new modules into their Azure tenant. ",
-          },
-          {
-            title: "Greenlite",
-            description:
-              "Since the last update, the BM team has managed to release several sets of improvements and new features, mainly focused on the core pdf review tool. With the latest release at the beginning of March, the product team also started onboarding new end-users who will start using the tool to conduct additional reviews. The goal is for the entire team to gather feedback on the newly implemented features to use as a guide for prioritizing future PDF tool work. In the meantime, the BM team is going to continue with the remainder of the planned improvements, with the difference that this time around the team might include work on the customer-facing project dashboard.",
-          },
-          {
-            title: "Hadrian",
-            description:
-              "The Hadrian team is currently working on implementing new features and adding sorting/filtering options where they are missing in the application. Additionally, the team is focusing on enhancing the internal admin portal. Hadrian is expanding its team and is actively seeking profiles such as DevOps and backend engineers. Several of our colleagues are being considered for these positions, and we hope that our team will grow as well. Furthermore, we have established collaboration with Hadrian regarding cybersecurity testing, where our team is diligently working on identifying vulnerabilities in the system. ",
-          },
-        ]}
-        rightParagraphs={[
-          {
-            title: "MijnDomein",
-            description:
-              "In 2024, MijnDomein is expanding its team by welcoming two new members from BrightMarbles. Kristina Tadic is joining the front-end-oriented team to support MijnDomein, while Vladimir Djurdjevic will contribute his expertise in a more backend-oriented capacity. Over the past 2-3 months, alongside our daily tasks, we collaborated with MijnDomein's development department to initiate some changes in our working methods. Recognizing our capabilities, our team members have selected us as candidates to lead specific features, granting us the responsibility and ownership of the role of feature lead.",
-          },
-          {
-            title: "MTV SysAdmin",
-            description:
-              "The project is finished, and we’ve performed a handover to the client.",
-          },
-          {
-            title: "NAQ",
-            description:
-              "With NAQ, our collaboration continues as usual, with regular development of the application ongoing. At the end of last month, the team was downscaled by one person.",
-          },
-          {
-            title: "Penetration Testing projects",
-            description:
-              "There is a slow start for pentest projects at the beginning of each year (standard behavior) and, for us, January and February were the two months where number of pentest projects was lower than our average throughout the year, but we already have a booked out March and many new projects coming up after that, from our partner channels, upsells and direct sales. The team is as amazing as ever!",
-          },
-          {
-            title: "Raven",
-            description:
-              "We completed the single send redesign project, implemented extended verification protocols, and are currently testing and preparing for the March newsletter. Filip Savić joined the project.",
-          },
-          {
-            title: "Security Operations projects",
-            description:
-              "A lot of interest has been generated for big prospects in Germany and Switzerland for our SecOps services, we are currently negotiating multiple deals and expect expansion of this team soon.",
-          },
-          {
-            title: "Toogethr Parking & Drive",
-            description:
-              "The Toogethr team is busy with new features and has a lot on their plate. They are planning to develop a mobile application, as well as Toogethr in a Box, which aims to provide a simplified version of integration with parking systems. These are certainly topics we will inform you about in the next newsletter. The primary focus in the near future is on creating a payment system for parking, on which the team is heavily engaged. ",
-          },
-          {
-            title: "vCISO projects and Partnership updates",
-            description:
-              "We are talking to a few prospects in the Netherlands interested in long term project engagement. As for our partnerships, we are accelerating the expansion of our partner network to diversify our lead generation and increase sales through partnerships. New deal signed with MJD Associated from US.",
-          },
-          {
-            title: "Zein",
-            description:
-              "We started working on a new project on February 12th, it’s an educational web application designed for parents and teachers to pose questions or address concerns regarding parenting, teaching, or interacting with children. Subsequently, users will receive responses from Robbie Zein, an expert in educating and raising children of various ages.",
-          },
-          {
-            title: "Simplify Orange",
-            description: "Business as usual.",
-          },
-          {
-            title: "Aurum Fitness, Bielik, MTV  ",
-            description: "Projects are finished.",
-          },
-        ]}
-      />
-      <QuickUpdate
-        company={Company.UN1QUELY}
-        title="UN1QUELY's Cybersecurity Initiatives: Empowering Future Generations and Fostering Collaboration"
-        description={
-          <div>
-            <div>
-              UN1QUELY has started an exciting collaboration with the University
-              of Montenegro. 🎓 Branko Džakula will be sharing his expertise in
-              cybersecurity with final-year Mathematical and Electronic
-              faculties students. Additionally, a similar initiative is in the
-              works for the University of Kragujevac.
-            </div>
-            <div>
-              In the cybersecurity arena, we've wrapped up an exciting contest
-              for high school students in Montenegro, orchestrated with the
-              Amplitudo Academy and backed by the European Union. Three teams
-              came out on top, showing us that the future’s bright with the new
-              generation’s talent. 🌟
-            </div>
-            <div>
-              Stateside, Damjan Cvetanović, Nebojša Lalić, and Branko Džakula
-              have been soaking up knowledge at various conferences and
-              networking gigs in the USA, and we're eager to hear their insights
-              in the next newsletter.
-            </div>
-            <div>
-              For Women's History Month, we’ll shine a light on diversity in
-              cybersecurity with a standout event. ✨ A big thank you to Damjan
-              Cvetanović, Branko Džakula, and Sanja Kekić from Women4Cyber
-              Serbia for organizing this live event that will uncover numerous
-              career opportunities in the field of cybersecurity for women
-              studying technical sciences in Novi Sad.
-            </div>
-            <div>
-              Finally, our colleague Filip Kecman took part in a panel
-              discussion titled "Cyber Paths for Women," organized by DAI,
-              USAID, and the Serbian Chamber of Commerce. A key highlight was
-              Filip's presentation of a lecture plan set to be rolled out in
-              Kragujevac. This initiative offered a tangible strategy during the
-              event, enhancing the partnership between public and private
-              sectors in cybersecurity, a crucial step toward addressing one of
-              the field's major challenges.
-            </div>
-          </div>
-        }
-      />
-      <QuickUpdate
-        bgColor="white"
-        company={Company.BRIGHT_MARBLES}
-        title="Celebrating Team Wins, Women's Empowerment, and New Beginnings"
-        description="As we waved goodbye to February and welcomed March, we were treated to some lovely weather and fun events. One of the highlights was our table football tournament. It was great to see new members from the Cybersecurity department joining in alongside our regular players. We're rooting for all of you and can't wait to see you play next year. Big congrats to our winners, Milica Stanković and Marko Krstanović – Marko, snagging that title for the second time is no small feat! 🏆 March holds special significance for us as we celebrate International Women's Day and Women's History Month with exciting initiatives. Firstly, hats off to Milan Stančić and Marina Vuković for preparing a webinar aimed at guiding all women interested in a QA career. 🙌 This initiative is targeted at supporting unemployed women or those considering a career transition into this field. Just a quick heads-up—there's an internal gathering for the BMGH women on March 19, and it's shaping up to be the social extravaganza of the season! 😉 We're turning our Novi Sad office into the ultimate hangout spot. So, expect some top-notch chit-chat, laughter, and maybe even a surprise or two. And hey, let's give a warm welcome back to Igor Trifunović. It's great to have you with us again, Igor! 🎉 "
-      />
-      <QuickUpdate
-        bgColor="black"
-        company={Company.BRIGHT_MARBLES_MACEDONIA}
-        title="Our Macedonian Office Expands: Welcome Nikola Donevski"
-        description={
-          <div>
-            <div>
-              Our Macedonian office continues to expand, welcoming a fresh face
-              this month. With 3 years tucked under his belt as a full-stack
-              engineer, Nikola Donevski steps in, brimming with expertise.
-              Mastering React, Redux, and a range of other technologies, he's
-              all geared up to tackle fresh challenges as our new Intermediate
-              Software Engineer. A hearty welcome aboard, Nikola! 🚀
-            </div>
-            {/* <div>
-              Description can be in form of text(string) or you can pass html as
-              this example show 💙
-            </div> */}
-          </div>
-        }
-      />{" "}
-      {/* <QuickUpdate
-        bgColor="blue"
-        company={Company.BRIGHT_MARBLES}
-        title="Lorem ipsum dolor sit amet consectetur adipisicing"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-      />
-      <QuickUpdate
-        bgColor="white"
-        company={Company.BRIGHT_MARBLES_MACEDONIA}
-        title="Lorem ipsum dolor sit amet consectetur adipisicing"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-      />
-      <QuickUpdate
-        bgColor="black"
-        company={Company.BRIGHT_MARBLES_NETHERLANDS}
-        title="Lorem ipsum dolor sit amet consectetur adipisicing"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque quia aut dolore reiciendis facilis cum quos animi illo eveniet maxime asperiores dolores labore quasi pariatur rem, quisquam perferendis similique debitis, necessitatibus voluptate commodi, minus earum ullam. Est blanditiis soluta cupiditate nulla, fugit odit explicabo, magni eveniet consequuntur ipsa dolores ut. Aliquam repellendus vel nostrum unde reiciendis. Aut asperiores debitis, corrupti incidunt harum cupiditate molestiae unde doloribus eum, expedita corporis placeat illum odio. Eius dignissimos, deserunt minus officiis odio assumenda culpa nesciunt at iste et beatae nemo deleniti, accusantium aliquid voluptatibus quia blanditiis voluptatum voluptates perferendis magni. Inventore, praesentium aliquam."
-      /> */}
-      <NewsAndEvents
-        data={[
-          {
-            img: "https://media.licdn.com/dms/image/D4D22AQGioGUte6I9wg/feedshare-shrink_2048_1536/0/1710242102469?e=1713398400&v=beta&t=u0B5By439MCcERIJhPH-WWiVYozMlqcA_yvOTeU9O9w ",
-            title:
-              "Cheers and Trophies: BMGH's Annual Table Football Tournament Recap",
-            description: (
-              <>
-                At the start of March, we had our yearly table football
-                tournament. There was a lot of friendly teasing between teams...
-                well, let's call it cheering each other on. The winning team
-                included last year's champ Marko Krstanović and new talent
-                Milica Stanković. We also had a special highlight: our youngest
-                contestant, Luka Kovač (also the director's son), proudly took
-                home a trophy. Talk about some sweet family perks! 😄 Just
-                another fun day at work!
-                {/* <a target="_blank" href="">
+    return (
+        <div className={styles.newsletter_body}>
+            <Header
+                title="April Company Update"
+                leftParagraphs={[
+                    {
+                        title: "Bench Strength:",
+                        description:
+                            "Our team remains strong and stable, with no significant changes compared to last month. We’ve added three new members who have quickly integrated and are actively contributing to projects. We're continuing to recruit to gear up for future client projects.",
+                    },
+                ]}
+                rightParagraphs={[
+                    {
+                        title: "Profit:",
+                        description:
+                            "Revenue this month has stayed consistent with the previous month. We’re stable, though slightly under our projected figures. We’re actively working on strategies to boost our revenue growth.",
+                    },
+                    {
+                        title: "Cash Flow:",
+                        description:
+                            "Our cash flow hasn't hit our target yet, but we’re not sitting back. Management is hands-on, taking steps to improve and stabilize our financial flow.",
+                    },
+                ]}
+            />
+            <ProjectClientSection
+                leftParagraphs={[
+                    {
+                        title: "Adriaan",
+                        description:
+                            "We've witnessed exciting progress since launching the project a month ago, and momentum is building. Our foundation is strong, setting us up for success. The Adriaan team has grown with the addition of three new members: a backend developer, a QA developer, and a mobile developer. Welcome aboard, Milana, Goran, and Nemanja!",
+                    },
+                    {
+                        title: "Anyone",
+                        description:
+                            "Business as usual, we had a very productive visit to the client’s office in Amsterdam where we achieved the planned goal.",
+                    },
+                    {
+                        title: "Concorde Health",
+                        description:
+                            "The project is nearing its conclusion, with the final sprint slated for the end of May. Clients are gearing up to launch into the product's sales phase.",
+                    },
+                    {
+                        title: "Costa Coffee",
+                        description:
+                            "We are in the last stage of regression testing for a digital transformation project. With this project, we are switching from the old stack to Talon.One. Last month we visited Costa Coffee in London to be a part of the Quarterly planning meetings.",
+                    },
+                    {
+                        title: "Crayon OTP",
+                        description:
+                            "We've completed the project just about on schedule. The slight delay was due to the Easter holidays and the client's absence. Moving forward, we're transitioning into a maintenance phase, working on it part-time.",
+                    },
+                    {
+                        title: "Crayon Zepter",
+                        description:
+                            "The project is underway and expected to wrap up by the end of the month. Following its completion, we'll begin negotiations for Phase 2.",
+                    },
+                    {
+                        title: "Greenlite",
+                        description:
+                            "Since the last update in early March, the BrightMarbles team has continued working on various improvements and features focused on the Greenlite core review tool. We've done two major releases with a small minor bug-fix release in between. We have also been working on a new release that will include another set of improvements and features, planned for around the middle of April. In discussions with the client's engineering teams, we also started planning the consolidation of the two platforms we've been developing in parallel. The initial goal would be to build out some of the potentially missing core features, as well as porting any of the improvements and features we've built out for the production platform. This plan should come into action by the end of April or early May, so watch this space for future updates!",
+                    },
+                    {
+                        title: "Hadrian",
+                        description:
+                            "We've reestablished collaboration with Hadrian for DevOps. Currently, Dusan Ilic is onboard, and we aim to grow our team further.",
+                    },
+                ]}
+                rightParagraphs={[
+                    {
+                        title: "NAQ",
+                        description:
+                            "Our newest team member, Igor Trifunovic, has joined the NAQ team, and we persist in our development efforts according to schedule.",
+                    },
+                    {
+                        title: "Penetration Testing projects",
+                        description:
+                            "Pentest projects have picked up in numbers with increased activity both from our channel partners and direct sales. We have established the first Red Team led by Miroslav Milicevic that will be our premium service within our overall Offensive Security offering. We are expanding our internship program and we’ll be onboarding new interns starting from June this year.",
+                    },
+                    {
+                        title: "Raven",
+                        description:
+                            "An important milestone has been achieved - the first email has been sent out through our service with success (Company Newsletter). Prior to this milestone the app was in the testing phase and afterwards the team shifted their focus back to development and bug fixing.",
+                    },
+                    {
+                        title: "Security Operations projects",
+                        description:
+                            "We are experiencing longer sale cycles for Security Operations projects than expected, with current seven opportunities in negotiation phase with high potential for team expansion. Current SecOps enagement with Otp Group is progressing as planned.",
+                    },
+                    {
+                        title: "vCISO projects and Partnership updates ",
+                        description:
+                            "Similar experience is present with sales cycles with vCISO projects as with Security Operations projects with current negotiations ongoing with prospects from the Netherlands and the United States.",
+                    },
+                    {
+                        title: "Zein",
+                        description:
+                            "The design phase is wrapping up, while development is set to continue through May, with completion anticipated by the end of the month.",
+                    },
+                    {
+                        title:
+                            "Anycoin, Carna, Crayon Stada, MijnDomein, Secfix, Simplify Orange, Toogethr Parking & Drive, Vega ReThink",
+                        description: "Business as usual.",
+                    },
+                ]}
+            />
+            <QuickUpdate
+                company={Company.BRIGHT_MARBLES}
+                title="New Mibsters have joined our team!"
+                description={
+                    <div>
+                        <div>
+                            We've had an exciting few weeks at BrightMarbles, welcoming three
+                            new team members! 😊 Marko Nikolić from Niš has joined our
+                            frontend team, bringing a wealth of expertise. Nemanja Lugumerski,
+                            hailing from Sombor, enhances our capabilities as an experienced
+                            mobile developer. And a big welcome back to Marko Stanaćev, who
+                            rejoins us to contribute significantly to the Carna project. ⚕️️
+                            Guys, once again, we extend a warm welcome to you all!
+                        </div>
+                    </div>
+                }
+            />
+            <QuickUpdate
+                bgColor="white"
+                company={Company.BRIGHT_MARBLES_MACEDONIA}
+                title="March Adventures: Visits to Novi Sad Office and Client Collaboration in the Netherlands"
+                description="March, Women’s History Month (marked by International Women's Day), was a perfect opportunity for Viktorija and Nastasja to visit our Novi Sad office and meet with their teams – marketing, Raven, and Zein. In addition to this trip, we also had another one to the Netherlands, where Atanas, alongside Nenad from Serbia, worked on enhancing our collaboration with the client Anyone."
+            />
+            <QuickUpdate
+                bgColor="black"
+                company={Company.BRIGHTLY}
+                title="Dear Nenad, get well soon!"
+                description={
+                    <div>
+                        <div>
+                            It is with a sense of concern that we announce Nenad Jović, our
+                            esteemed CEO, is taking a temporary leave for health reasons. This
+                            decision was made in consultation with the BMGH management team,
+                            and we fully support Nenad in prioritizing his health and
+                            well-being. During his recuperation, Boris Berat and the Brightly
+                            management team will manage day-to-day operations. We ask for your
+                            understanding and support during this time, as we rally around
+                            Nenad in his recovery and continue to uphold the values of
+                            solidarity and teamwork that define our community.
+                        </div>
+                    </div>
+                }
+            />{" "}
+            <QuickUpdate
+                bgColor="white"
+                company={Company.BRIGHT_MARBLES}
+                title="UN1QUELY: Celebrating Success and Sustaining Momentum"
+                description="Our UN1QUELY team remains strong in their commitment and productivity. During Women's Month, we hosted impactful cybersecurity events that have significantly boosted interest in the UN1QUELY Academy. Additionally, our engineers consistently foster successful client collaborations across various projects. Fantastic job, team—keep pushing forward!"
+            />
+            <NewsAndEvents
+                data={[
+                    {
+                        img: "https://media.licdn.com/dms/image/D4D22AQHMbrsjg0P5lQ/feedshare-shrink_2048_1536/0/1711712980735?e=1715817600&v=beta&t=zLcgsVU_9yF2oujrBJFyZl_PD95FCSNeOSlQ9uWW2E8",
+                        title: "Empowering Women: Recap of March Workshops and Lectures",
+                        description: (
+                            <>
+                                March has ended, along with the series of events we organized in
+                                celebration of International Women's Day and Women’s History
+                                Month. One of the highlights was a painting workshop for our
+                                female colleagues on March 8th. It was a delightful opportunity
+                                to bond, get to know each other better, and share some laughs.
+                                Another noteworthy event that occurred between our newsletters
+                                was a Cybersecurity workshop tailored specifically for girls.
+                                Speakers Branko Džakula, Damjan Cvetanović, and Sanja Kekić
+                                engaged the audience in an interactive discussion, shedding
+                                light on the career path of a cybersecurity professional. Last
+                                but certainly not least, we organized a lecture aimed at women
+                                interested in exploring the field of QA. Milan Stančić and
+                                Marina Vuković expertly presented this career avenue, providing
+                                valuable insights and guidance. These events underscore our
+                                commitment to fostering diversity and empowering women in the
+                                tech industry.
+                                {/* <a target="_blank" href="">
                   Click here to read more
                 </a> */}
-              </>
-            ),
-          },
-          {
-            img: "https://media.licdn.com/dms/image/D4D22AQGJEvBaDS8c2A/feedshare-shrink_2048_1536/0/1708430432238?e=1713398400&v=beta&t=f4ybN2RYxqze8V1UlBXQh8SaUJAYeFqAiholOticQnk",
-            title:
-              "UN1QUELY Champions Digital Safety: High School Cybersecurity Competition Success in Montenegro",
-            description: (
-              <>
-                UN1QUELY teamed up with Amplitudo Academy to host a thrilling
-                cybersecurity competition for Montenegro's high school students
-                called "Hunting for Hacker Code." Three standout teams emerged
-                victorious: Vuln Hunters, DedSec, and Anon1mus. This
-                competition, a key part of the EU-funded "E-services and Digital
-                Infrastructure in Response to Covid-19" project, showcases our
-                dedication to promoting digital safety.
-                {/* <a
-                  target="_blank"
-                  href="https://brightmarbles.io/blog/agile-chronicles-chapter1/"
-                >
-                  Click here to read more
-                </a> */}
-              </>
-            ),
-          },
-          {
-            img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*AAMteRjqimQFa2-FFXbr_A.png",
-            title:
-              "Breaking Barriers: Filip Kecman and UN1QUELY Shine at Cyber Pathways for Women Event",
-            description: (
-              <>
-                The "Cyber Pathways for Women" event, co-hosted by DAI, USAID,
-                and the Serbian Chamber of Commerce, delved into the challenges
-                of achieving diversity in cybersecurity. Noteworthy moments
-                included insights from a study on societal norms affecting
-                workforce diversity and a sneak peek into upcoming initiatives
-                by the "Cyber Pathways Task Force." The event buzzed with
-                industry reps, including our own Filip Kecman from UN1QUELY, who
-                sparked excitement with plans for Kragujevac, igniting
-                cross-sector collaboration.
-                {/* <a
-                  target="_blank"
-                  href="https://medium.com/@un1quely/the-beauty-of-testing-from-home-to-the-open-road-846c9bc11477"
-                >
-                  Click here to read more
-                </a> */}
-              </>
-            ),
-          },
-          {
-            img: "https://brightmarbles.io/wp-content/uploads/2024/03/devops-manager.jpg",
-            title:
-              "DevOps Insights with Sanel: Tech Agility Meets Ironman Tenacity",
-            description: (
-              <>
-                In a discussion with Sanel Jovanović, the IT director at
-                Brightly, we explore the importance of DevOps in software
-                development. Sanel elaborates on how DevOps serves as a vital
-                link connecting development, operations, and quality assurance.
-                He likens this integration to his enthusiasm for triathlons,
-                illustrating the synergy and endurance required in both fields.
-                He discusses the DevOps methodology, its advantages, its
-                implementation in project workflows, and the technologies
-                involved. Reflecting on past projects, he envisions DevOps'
-                future, stressing its crucial role in efficient project delivery
-                and security enhancement.
-                <a
-                  target="_blank"
-                  href="https://brightmarbles.io/blog/devops-for-effective-software-development/  "
-                >
-                  Click here to read more
-                </a>
-              </>
-            ),
-          },
-          {
-            img: "https://brightmarbles.io/wp-content/uploads/2024/02/onboarding-and-collaboration.jpg",
-            title: "The Crucial Role of Documentation in Software Development",
-            description: (
-              <>
-                Oliver Šipoš, a senior software engineer and co-founder at BMGH,
-                emphasizes the critical role documentation plays in software
-                development. He highlights its importance in providing a clear
-                system overview, aiding in onboarding new team members,
-                fostering collaboration, easing code maintenance and future
-                development, and improving communication with stakeholders.
-                Through these points, Oliver convincingly argues that
-                documentation is a valuable investment in the long-term success
-                and sustainability of software projects.
-                <a
-                  target="_blank"
-                  href="https://brightmarbles.io/blog/technical-documentation-in-software-development/"
-                >
-                  Click here to read more
-                </a>
-              </>
-            ),
-          },
-          {
-            img: "https://brightmarbles.io/wp-content/uploads/2024/02/darko-kovac-interview.jpg",
-            title: "Digital Product Development – A Year of Transformation",
-            description: (
-              <>
-                In this interview with Darko Kovač, BrightMarbles Group's CTO,
-                insights are shared on the company's operations and industry
-                trends. Darko discusses navigating tech challenges and adapting
-                to market demands, emphasizing tailored strategies for client
-                collaboration. He highlights the role of AI and the need for
-                agile adaptation in 2024's dynamic global tech market.
-                <a
-                  target="_blank"
-                  href="https://brightmarbles.io/blog/digital-product-development-a-year-of-transformation/"
-                >
-                  Click here to read more
-                </a>
-              </>
-            ),
-          },
-          {
-            img: "https://computerone.com.au/wp-content/uploads/2020/02/Penetration-Testing-Main.jpg",
-            title: "ROI Uncovered: The True Value of Penetration Testing",
-            description: (
-              <>
-                Damjan's insights into penetration testing highlight its crucial
-                role in proactively protecting digital assets. Through an
-                exploration of ROI and real-world statistics, he effectively
-                communicates the importance of this cybersecurity measure in
-                mitigating the risk of data breaches for businesses.
-                <a
-                  target="_blank"
-                  href="https://un1quely.com/blog/roi-uncovered-the-true-value-of-penetration-testing/"
-                >
-                  Click here to read more
-                </a>
-              </>
-            ),
-          },
-          {
-            img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*g6yA6sGbQBR_Pmm5EzuO4g.png",
-            title: "Upgrade App Version via GitHub Action ",
-            description: (
-              <>
-                In the dynamic world of software development, versioning is
-                crucial for continuous improvement. Darko Petrović showcases how
-                GitHub Actions simplifies this process, particularly for Flutter
-                mobile apps. By utilizing GitHub Secrets for secure storage,
-                Darko demonstrates a seamless method to automate version
-                increments without altering the main branch. Through GitHub
-                workflows, the current version is retrieved, incremented, and
-                updated in GitHub Secrets, enhancing efficiency and minimizing
-                errors. This approach enables teams to concentrate on
-                development with confidence.
-                <a
-                  target="_blank"
-                  href="https://medium.com/@Brightly_BMGH/upgrade-app-version-via-github-action-ac9ccb421ad3"
-                >
-                  Click here to read more
-                </a>
-              </>
-            ),
-          },
-        ]}
-      />
-      <OpenPositions
-        jobPostings={[
-          {
-            title: "Software Engineer - Node.js (BMGH)",
-            postingUrl:
-              "https://bmgh.zohorecruit.eu/jobs/Careers/36808000000430020/Experienced-Software-Engineer---Node-js?source=CareerSite",
-          },
-          // {
-          //   title: Software Engineer (UN1QUELY)",
-          //   postingUrl:
-          //     "https://bmgh.zohorecruit.eu/jobs/UN1QUELY/36808000002466166/Penetration-Tester?source=CareerSite",
-          // },
-          {
-            title: "Software Engineer - .Net (BMGH)",
-            postingUrl:
-              "https://bmgh.zohorecruit.eu/jobs/Careers/36808000000423157/Experienced-Software-Engineer---NET?source=CareerSite",
-          },
-        ]}
-      />
-      <ThreeColorDivider />
-      <Colleagues
-        colleagues={[
-          {
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/02/join-us.gif",
-            fullName: "Team",
-            jobTitle: "HR & MKT",
-            description:
-              "Darko Kovač: I would like to commend the HR and Marketing teams for their excellent initiatives to improve the company culture. Both teams are very dedicated, creative, full of amazing ideas, but also greatly organized in implementing those ideas into reality. Their contribution to our company is immense, so I’d like to thank them and praise their invaluable efforts!",
-          },
-          {
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/02/join-us.gif",
-            fullName: "TOs",
-            jobTitle: "& their teams",
-            description:
-              "Darko Kovač: Kudos to our Tech Officers and their teams who have successfully reached an agreement on work-from-office days, thus creating a productive and collaborative work environment. Spending time together both working and having fun with coworkers is an important aspect of teamwork, and I would like to congratulate them for making this important step!",
-          },
-          {
-            imgUrl:
-              "https://miro.medium.com/v2/resize:fit:640/format:webp/1*3JqBtUe-BnBUkqzcWkmoFQ.png",
-            fullName: "Ivana Grbić",
-            jobTitle: "Office Manager",
-            description:
-              "Vedrana Kaloper: I want to extend my heartfelt praise to Ivana for her delightful, warm, and collaborative nature. Her constant cheerfulness conveys the sense that no task is too daunting for her. Ivana approaches her diverse responsibilities, from organizing events to selecting thoughtful gifts for special occasions, with immense dedication, taste, and attention to detail. Truly, she deserves every bit of commendation. From the bottom of my heart, all kudos to Ivana!",
-          },
-          {
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/06/DSC0s1226.png",
-            fullName: "Kristina Tadić",
-            jobTitle: "Software Engineer",
-            description:
-              "Brane Opačić: A round of applause for Kristina, who is very skillful and has adapted very easily to the highly demanding selection process for one of our clients. Kristina made a great effort to prepare for interviews with the client, while she still had many obligations on her ongoing project, which shows her excellent time management skills and great dedication to new challenges. Bravo to Kristina!",
-          },
-          {
-            imgUrl:
-              "https://media.licdn.com/dms/image/D4D03AQGRatEhFmbVyQ/profile-displayphoto-shrink_400_400/0/1698358946419?e=1715817600&v=beta&t=SfZrEe2Aamu_Q4vPRy1wSQq-6dWRrNSQB8NAYEVYc04",
-            fullName: "Lazar Vukašinović",
-            jobTitle: "Offsec Engineer",
-            description:
-              "Luka Kovač: Congratulations to Lazar for his involvement and effort invested in the preparation of the career development framework for the cybersecurity team. Lazar took it upon himself to create the career development matrix for his department; he actively participates in the preparation sessions, and we all have the impression that he has shown great proactivity and willingness to participate in defining company-level procedures.",
-          },
-          {
-            imgUrl:
-              "https://media.licdn.com/dms/image/D4D03AQFyxcR4rX0GJw/profile-displayphoto-shrink_400_400/0/1697538840178?e=1715817600&v=beta&t=ZYILg6i03NqkULw3Mgf-cC-1aj_goCJTh4lJEsxEGrk",
-            fullName: "Ana Batranović",
-            jobTitle: "Penetration Tester",
-            description:
-              "Lazar Vukašinović: A big shoutout to Ana for her exceptional adaptability when it comes to learning new technologies needed for a pen testing project. Ana is very proactive in taking on new responsibilities, which shows her great desire to learn and progress. I must also commend Ana for her remarkable proficiency in English; it is phenomenal! Kudos to Ana for her outstanding contributions!",
-          },
-        ]}
-      />
-      <FamilyNews
-        title="Celebrations 🎉"
-        data={[
-          {
-            img: "https://media.licdn.com/dms/image/C4E03AQExce7v2grTIg/profile-displayphoto-shrink_800_800/0/1603114986803?e=1716422400&v=beta&t=t27JkzaJpsgqpcHtogOU7HD44C-jTpma0mpieYjZ3Xc",
-            description: (
-              <>
-                BrightMarbles Novi Sad has grown by one familiar - new member,
-                Igor Trifunović, a software engineer with approximately 12 years
-                of experience. He brings 10 years of experience with Java and
-                Android, and over 8 years of experience with .NET. Welcome,{" "}
-                <span> Igor! </span>
-              </>
-            ),
-          },
-          {
-            img: "https://media.licdn.com/dms/image/D4D03AQFCPh8z38Cp9g/profile-displayphoto-shrink_800_800/0/1694703536398?e=1716422400&v=beta&t=hd__Pvz6nKj-PhhNSYSDm7jGGGM5zXHQraU3tdnPpAA",
-            description: (
-              <>
-                Nikola Donevski has joined our Macedonian office. With 3 years
-                of experience as a full-stack engineer, he brings a wealth of
-                knowledge to the table. Specializing in React, Redux, and more,
-                he's ready to dive into new challenges as our Intermediate
-                Software Engineer. Welcome <span> Nikola! </span>
-              </>
-            ),
-          },
-        ]}
-      />
-      <Birthdays
-        employees={[
-          {
-            name: "Miloš",
-            imgUrl:
-              "https://media.licdn.com/dms/image/D4D03AQEd5M9RrjS2Cw/profile-displayphoto-shrink_800_800/0/1668608665740?e=1716422400&v=beta&t=K6fro-WtVWq9BB9D5p2IDkhOOkgXqBMh4lpQnn_i84Y",
-          },
-          {
-            name: "Darko",
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2021/03/DSC00sss424.png",
-          },
-          {
-            name: "Emir",
-            imgUrl:
-              "https://media.licdn.com/dms/image/D4D03AQFLRrhMR9hXAg/profile-displayphoto-shrink_400_400/0/1676822575287?e=1716422400&v=beta&t=uzaHHKDv2QK3Om5oSictVU5B3pPLj1-tEVhR8ZVRJbo",
-          },
-          {
-            name: "Darko",
-            imgUrl:
-              "https://brightmarbles.io/wp-content/uploads/2022/04/DSC0131sss7.png",
-          },
-          {
-            name: "Atanas",
-            imgUrl:
-              "https://media.licdn.com/dms/image/C4E03AQGcXAnugYqC8Q/profile-displayphoto-shrink_400_400/0/1637311607836?e=1716422400&v=beta&t=3PZ2OhcnlC25XlFXAqHt3gSICH6Z8G4n16cP6b3YfCI",
-          },
-          {
-            name: "Marko",
-            imgUrl:
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*q6UcxSsK46IwFriDLkAJzQ.png",
-          },
-          {
-            name: "Milica",
-            imgUrl:
-              "https://media.licdn.com/dms/image/D4E03AQGdaJ22ivVjzw/profile-displayphoto-shrink_800_800/0/1681910882695?e=1716422400&v=beta&t=CX1b-Pa5owxiyRDUzTQ_UhcUbQqduXyeBD5GSTemBEQ",
-          },
-          {
-            name: "Martin",
-            imgUrl:
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*RvbCzQhW4oXOSNiE-x9Eyw.png",
-          },
-          {
-            name: "Goran",
-            imgUrl:
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*V-Jf29VS5vhiUUR3EcCplg.png",
-          },
-        ]}
-      />
-      <Contributions />
-      <ThreeColorDivider hideWhite />
-    </div>
-  );
+                            </>
+                        ),
+                    },
+                    {
+                        img: "https://images.pexels.com/photos/974198/pexels-photo-974198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                        title:
+                            "April Initiatives: Supporting Autism Awareness, Easter Fun, and Healthy Living",
+                        description: (
+                            <>
+                                April looks like a busy month for us! It's Autism Awareness
+                                Month, an important time for many families. We're dedicated to
+                                helping children with autism find their place in regular work
+                                environments and explore careers in IT. To support this, our
+                                tale talented team is organizing a Scratch programming workshop
+                                for 16 remarkable young people. As Easter approaches, we’re also
+                                planning a festive egg-painting event for the kids of our
+                                colleagues. It’s a wonderful opportunity for fun and creativity,
+                                bringing our BrightMarbles team together. This week, we're
+                                meeting with a nutritionist to brush up on our healthy eating
+                                knowledge, something we'll put into action after the holidays.
+                                Additionally, we're excited about our first Lean Coffee session
+                                and a Bachata workshop, blending knowledge exchange with fun in
+                                our full calendar. And we can’t overlook the Belgrade
+                                Marathon—our runners are actively training and ready to hit the
+                                pavement!
+                            </>
+                        ),
+                    },
+                    {
+                        img: "https://brightmarbles.io/wp-content/uploads/2024/04/MicrosoftTeams-image-87.png",
+                        title:
+                            "Implementing Tech Behind a Healthy Future: The BrightMarbles Initiative (by Pavle Bobić)",
+                        description: (
+                            <>
+                                Discover how BrightMarbles Group is revolutionizing healthcare
+                                through technology with groundbreaking projects like Cellink,
+                                Concorde Health, and Carna Health. Explore their innovative
+                                solutions, collaborative efforts, and real-world impact in
+                                tackling global healthcare challenges. From cutting-edge 3D
+                                bioprinting to early detection platforms for chronic kidney
+                                disease, BrightMarbles is at the forefront of health-tech
+                                innovation, shaping a healthier tomorrow, one innovation at a
+                                time.
+                                <a
+                                    target="_blank"
+                                    href="https://brightmarbles.io/blog/implementing-tech-behind-a-healthy-future/"
+                                >
+                                    Click here to read more
+                                </a>
+                            </>
+                        ),
+                    },
+                    {
+                        img: "https://brightmarbles.io/wp-content/uploads/2024/04/Sanja-Cover-1.png",
+                        title:
+                            "A Recap of Women's History Month at BrightMarbles Group (by Nastasija Trajanova)",
+                        description: (
+                            <>
+                                At BrightMarbles Group, diversity and inclusion aren't just
+                                buzzwords – they're core values that drive everything we do.
+                                This Women’s History Month, we proudly celebrated the
+                                achievements of women in tech and took concrete steps to empower
+                                and inspire the next generation of female leaders. From hosting
+                                informative webinars on Quality Assurance (QA) and Cybersecurity
+                                to organizing fun and empowering team-building events like Paint
+                                & Wine, we're committed to creating a workplace where everyone
+                                feels valued and supported.
+                                <a
+                                    target="_blank"
+                                    href="https://brightmarbles.io/blog/recap-of-womens-history-month-at-brightmarbles-group/"
+                                >
+                                    Click here to read more
+                                </a>
+                            </>
+                        ),
+                    },
+                    {
+                        img: "https://brightmarbles.io/wp-content/uploads/2024/03/Untitled-design-2.jpg",
+                        title:
+                            "Business Strategy and Brand Positioning – an Interview with Nevena Nemeš",
+                        description: (
+                            <>
+                                Dive into the dynamic world of marketing and software
+                                development with Nevena Nemeš, Chief Experience Officer and Head
+                                of Marketing at BrightMarbles Group. In this enlightening
+                                conversation, Nevena shares her journey from psychology to IT
+                                and marketing, offering valuable insights into the blend of
+                                creativity and strategy required in her role. Join us as we
+                                explore the intricacies of marketing strategy, content creation,
+                                and team dynamics, gaining a deeper understanding of the role of
+                                marketing in driving impactful user experiences and business
+                                success.
+                                <a
+                                    target="_blank"
+                                    href="https://brightmarbles.io/blog/business-strategy-and-brand-positioning-an-interview-with-nevena-nemes/"
+                                >
+                                    Click here to read more
+                                </a>
+                            </>
+                        ),
+                    },
+                    {
+                        img: "	https://brightmarbles.io/wp-content/uploads/2024/03/MicrosoftTeams-image-77.jpg",
+                        title:
+                            "HR feat. Business Development - An Interview with Mirjana Parpura Đorđević",
+                        description: (
+                            <>
+                                Explore the fascinating career journey of Mirjana
+                                Parpura-Đorđević, the HR Director at Brightly, as she reflects
+                                on her diverse experiences spanning the banking sector, IT
+                                startups, and now, Brightly within the BrightMarbles Group. From
+                                her early days as a French teacher to navigating the intricacies
+                                of HR in the tech industry, Mirjana shares valuable insights
+                                into her career transitions, challenges, and achievements. Join
+                                us as we delve into her role at Brightly, her perspectives on
+                                women in the IT industry, and her passion for gardening outside
+                                the office.
+                                <a
+                                    target="_blank"
+                                    href="https://brightmarbles.io/blog/hr-feat-business-development-an-interview-with-mirjana-parpura-dordevic/"
+                                >
+                                    Click here to read more
+                                </a>
+                            </>
+                        ),
+                    },
+                ]}
+            />
+            <OpenPositions
+                jobPostings={[
+                    {
+                        title:
+                            "Experienced Frontend Engineer (.NET) - Medior or Senior level (BRIGHTMARBLES & UN1QUELY)",
+                        postingUrl:
+                            "https://bmgh.zohorecruit.eu/jobs/Careers/36808000000423157/Experienced-Software-Engineer---NET?source=CareerSite",
+                    },
+                    {
+                        title:
+                            "Experienced Frontend Engineer (React) - Medior or Senior level (BRIGHTMARBLES & UN1QUELY)",
+                        postingUrl:
+                            "https://bmgh.zohorecruit.eu/jobs/Careers/36808000001590457/Experienced-Frontend-Engineer-React-?source=CareerSite",
+                    },
+                    {
+                        title:
+                            "Experienced Software Engineer (Node.js) - Medior or Senior level (BRIGHTMARBLES & UN1QUELY)",
+                        postingUrl:
+                            "https://bmgh.zohorecruit.eu/jobs/Careers/36808000000430020/Experienced-Software-Engineer---Node-js?source=CareerSite",
+                    },
+                ]}
+            />
+            <ThreeColorDivider />
+            <Colleagues
+                colleagues={[
+                    {
+                        imgUrl:
+                            "https://media.licdn.com/dms/image/D4D03AQHsVJeZWybtcQ/profile-displayphoto-shrink_800_800/0/1704895229445?e=1718841600&v=beta&t=rYVCn6Ueo3HluECRh1l0WL3P54kMBA_hthQ1_bq4Big",
+                        fullName: "Teodora Pantelić",
+                        jobTitle: "Office Manager",
+                        description:
+                            "Brightly Belgrade team: In the heartbeat of our office, there's a force that keeps everything running seamlessly. That force is Teodora, our exceptional Office Manager, whose dedication and expertise elevate our workplace to extraordinary heights! Teodora is more than just an Office Manager; she's the cornerstone of our operations. No task is too daunting for her, and no challenge too great to overcome. Beyond her professional prowess, Teodora embodies the spirit of teamwork and collaboration. Her warm smile and encouraging demeanor create a welcoming atmosphere for everyone, fostering a sense of unity and camaraderie within our team. Thank you, Teodora, for being the heartbeat of our office and for everything you do! ",
+                    },
+                    {
+                        imgUrl:
+                            "https://brightmarbles.io/wp-content/uploads/2021/06/DSC0113ss9.png",
+                        fullName: "Milan Stančić",
+                        jobTitle: "& the tech office",
+                        description:
+                            "Darko Kovač: I would like to praise Milan Stančić and his Tech Office for their amazing knowledge sharing initiatives! Community of Practice meetings that they maintain once or twice a month are a great opportunity to exchange knowledge and share ideas, as well as discuss any other topics in the area of software testing. Milan also organized an API testing workshop for his colleagues, where he introduced them to the basics of API testing with Postman, so kudos for such an exceptional work!",
+                    },
+                    {
+                        imgUrl:
+                            "https://miro.medium.com/v2/resize:fit:828/format:webp/1*PO9U2FvvJ3AebrJn6LV-zg.png",
+                        fullName: "Stevan Vučić",
+                        jobTitle: "InfoSec Engineer",
+                        description:
+                            "Branko Džakula: I would like to commend Stevan for his excellent mentoring of our first intern in the Cybersecurity team! His dedication and expertise have not only fostered Danijel's professional development but have also strengthened the team's capabilities overall. We're fortunate to have such a valuable mentor as Stevan on our team. Great work!",
+                    },
+                    {
+                        imgUrl:
+                            "https://media.licdn.com/dms/image/D4D03AQGWYRUf0kr3pA/profile-displayphoto-shrink_400_400/0/1674553270598?e=1718236800&v=beta&t=m09E58zPGff1x0TTbcqqbbcLPTvoUQMUUhWgl5RibTo",
+                        fullName: "Marina Vuković ",
+                        jobTitle: "QA Engineer",
+                        description:
+                            "Milan Stančić: I would like to commend Marina for her outstanding cooperation in preparing a presentation about the QA role that we organized for the Women’s History Month. The performance of the lecture exceeded expectations, keeping the attention of the participants, who gave us positive feedback afterwards. Great work, Marina!",
+                    },
+                    {
+                        imgUrl:
+                            "https://brightmarbles.io/wp-content/uploads/2023/03/Nastasija-Trajanova.png",
+                        fullName: "Nastasija Trajanova",
+                        jobTitle: "MKT Specialist",
+                        description:
+                            "Nevena Nemeš: Staša is exceptional! Always ready with fresh ideas, she pushes the whole team to improve. And when there's a task that needs doing, she's on it—no hesitation, no need for handholding. Let's all give it up for Staša, who keeps proving time and again that she's a key part of what we do!",
+                    },
+                    {
+                        imgUrl:
+                            "https://brightmarbles.io/wp-content/uploads/2021/02/join-us.gif",
+                        fullName: "Zein",
+                        jobTitle: "Team",
+                        description:
+                            "Dunja Ibročić: Hats off to every member of the Zein team for their commitment, exceptional dedication, and remarkable self-organization in delivering a top-quality product within the deadline.",
+                    },
+                    {
+                        imgUrl:
+                            "https://brightmarbles.io/wp-content/uploads/2021/06/DSC0109ss4.png",
+                        fullName: "Miroslava Debeljački",
+                        jobTitle: "Software Engineer",
+                        description:
+                            "Tanja Maliković: Miroslava, as part of our Flutter team, I want to thank you for your great work in getting the HCP app ready for release. Your help was crucial, and I appreciate your consistent hard work in our team.",
+                    },
+                    {
+                        imgUrl:
+                            "https://brightmarbles.io/wp-content/uploads/2021/03/DSC007ss23.png",
+                        fullName: "Marko Krstanović",
+                        jobTitle: "SE & Flutter TO",
+                        description:
+                            "Tanja Maliković: Marko, as the other half of our Flutter team, I also want to thank you for your efforts in getting the HCP app ready for release. You did a fantastic job, and I'm really grateful. I know I can always count on your expertise.",
+                    },
+                    {
+                        imgUrl:
+                            "https://brightmarbles.io/wp-content/uploads/2021/02/join-us.gif",
+                        fullName: "Concorde",
+                        jobTitle: "Team",
+                        description:
+                            "Dunja Ibročić: Enormous appreciation to every member of the Concorde team for their dedication, focus, and remarkable achievements over the past nine months while contributing to the Concorde product.",
+                    },
+                ]}
+            />
+            <FamilyNews
+                title="A reason to celebrate"
+                data={[
+                    {
+                        img: "https://nameitcustomdecor.com.au/cdn/shop/products/IMG_2370.jpg?v=1591945706",
+                        description: (
+                            <>
+                                Welcome to the world of parenthood, Marko! Enjoy every snuggle,
+                                every smile, and cherish every moment with your wonderful boy
+                                Andrej. Congratulations on the arrival of your precious little
+                                one! We can’t wait to hear all about your adventures together.
+                                Congratulations to <span> Marko Dobrijević </span>
+                            </>
+                        ),
+                    },
+                    {
+                        img: "https://images.pexels.com/photos/7784602/pexels-photo-7784602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                        description: (
+                            <>
+                                Dear Katarina, Congratulations on your marriage! Wishing you a
+                                lifetime of love, joy, and happiness together. May your days be
+                                filled with beautiful moments and your hearts be forever
+                                intertwined. Cheers to a wonderful journey ahead as husband and
+                                wife! Congratulations to <span> Katarina </span>
+                            </>
+                        ),
+                    },
+                ]}
+            />
+            <Birthdays
+                employees={[
+                    {
+                        name: "Miloš",
+                        imgUrl:
+                            "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lAitD4_xZ3pbvoi-Rq5Wmg.png",
+                    },
+                    {
+                        name: "Marjan",
+                        imgUrl:
+                            "https://miro.medium.com/v2/resize:fit:828/format:webp/1*c7Htp6QVu024A9qgxZ17OQ.png",
+                    },
+                    {
+                        name: "Marko",
+                        imgUrl:
+                            "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*X-jfvy8lEzJt6qJM_1lOCw.png",
+                    },
+                    {
+                        name: "Milan",
+                        imgUrl:
+                            "https://brightmarbles.io/wp-content/uploads/2021/06/DSC0113ss9.png",
+                    },
+                    {
+                        name: "Ivana",
+                        imgUrl:
+                            "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*NoCsyngn_vP6ZBQSATer2A.png",
+                    },
+                    {
+                        name: "Dragana",
+                        imgUrl:
+                            "https://media.licdn.com/dms/image/C5603AQGFSzIP0BOLrQ/profile-displayphoto-shrink_800_800/0/1654776503579?e=1718236800&v=beta&t=n4E67LR62oPlDoin5DeDr2s_5DdBN1MrLLfNIb9DgYg",
+                    },
+                    {
+                        name: "Milica",
+                        imgUrl:
+                            "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Nc8fBL5Xxokv9dflZIrh_w.png",
+                    },
+                    {
+                        name: "Katarina",
+                        imgUrl:
+                            "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*XigZ-njzVL3L4eLORLjhjA.png",
+                    },
+                    {
+                        name: "Aleksandar",
+                        imgUrl:
+                            "https://media.licdn.com/dms/image/D4D03AQEEvnBFZZy-oA/profile-displayphoto-shrink_800_800/0/1674633375134?e=1718236800&v=beta&t=mt5KBrKwm9v8f6qC09dGANpoBqRHQVfoyYAjYzkfdMA",
+                    },
+                    {
+                        name: "Jovana",
+                        imgUrl:
+                            "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*GUYxTBz4Ivj1vVibwf-rVQ.png",
+                    },
+                ]}
+            />
+            <Contributions />
+            <ThreeColorDivider hideWhite />
+        </div>
+    );
 };
